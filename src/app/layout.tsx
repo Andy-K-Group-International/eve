@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import { IBM_Plex_Sans, IBM_Plex_Mono, Playfair_Display } from "next/font/google";
 import { CurrencyProvider } from "@/context/CurrencyContext";
 import { LanguageProvider } from "@/context/LanguageContext";
 import CookieBanner from "@/components/CookieBanner";
@@ -16,6 +16,13 @@ const ibmPlexMono = IBM_Plex_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
   weight: ["400", "500", "700"],
+});
+
+const playfairDisplay = Playfair_Display({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
 const SITE_URL = "https://andykgroup.com";
@@ -94,7 +101,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ibmPlexSans.variable} ${ibmPlexMono.variable} antialiased font-sans`}
+        className={`${ibmPlexSans.variable} ${ibmPlexMono.variable} ${playfairDisplay.variable} antialiased font-sans`}
       >
         <LanguageProvider>
           <CurrencyProvider>

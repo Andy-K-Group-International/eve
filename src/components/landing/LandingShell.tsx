@@ -20,7 +20,7 @@ export default function LandingShell() {
       <CurrencyProvider>
         <main className="[overflow-x:clip]">
           <Navbar />
-          <div className="relative overflow-clip">
+          <div className="relative overflow-clip isolate">
             <HeroBackground />
             <Hero />
           </div>
