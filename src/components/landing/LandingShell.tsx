@@ -14,7 +14,7 @@ import AmbientMusic from "./AmbientMusic";
 
 export default function LandingShell() {
   return (
-    <main className="[overflow-x:clip]">
+    <main className="[overflow-x:clip] section-bg-grid">
       <Navbar />
       <div className="relative overflow-clip">
         <HeroBackground />

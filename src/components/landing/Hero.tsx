@@ -15,7 +15,12 @@ export default function Hero() {
   }
 
   return (
-    <section id="hero" className="text-center py-20 px-8 max-w-[900px] mx-auto">
+    <section id="hero" className="relative text-center py-20 px-8 max-w-[900px] mx-auto">
+      {/* Cartesian grid overlay — same pattern as ADAM hero */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ opacity: 0.55 }}>
+        <div className="cartesian-grid" />
+        <div className="cartesian-grid-glow" />
+      </div>
       <img
         src="/images/eve-logo.png"
         alt="E.V.E."
