@@ -28,7 +28,7 @@ export default function Hero() {
         </span>
       </h1>
       <p className="text-xl leading-relaxed text-muted font-light max-w-[620px] mx-auto mb-3">
-        The execution and validation intelligence layer. E.V.E. processes operational data, supports strategic decisions, and delivers implementation intelligence across the Andy&rsquo;K Group ecosystem.
+        E.V.E. processes operational data, supports strategic decisions, and delivers implementation intelligence across the Andy&rsquo;K Group ecosystem.
       </p>
       <p className="text-base leading-relaxed text-muted-2 font-light max-w-[540px] mx-auto mb-9">
         By{" "}

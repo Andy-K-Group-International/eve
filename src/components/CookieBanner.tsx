@@ -129,7 +129,7 @@ export default function CookieBanner() {
   if (!visible) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 p-4 md:p-6">
+    <div className="fixed inset-x-0 bottom-0 z-[300] p-4 md:p-6">
       <div className="max-w-[520px] mx-auto md:mx-0 md:ml-auto bg-white border border-grid-500 shadow-[0_-4px_24px_-4px_rgba(0,0,0,0.1)] overflow-hidden">
         {!showPreferences ? (
           /* ── Layer 1: Banner ── */

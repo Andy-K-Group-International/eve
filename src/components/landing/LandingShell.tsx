@@ -28,7 +28,7 @@ export default function LandingShell() {
       <TronDivider />
       <AccessPortal />
       <Footer />
-      <AmbientMusic src="/audio/eve-theme.wav" credit="E.V.E." creditUrl="#hero" />
+      <AmbientMusic src="/audio/eve-theme.wav" credit="DJ Andy'K" creditUrl="https://www.djandykofficial.com" />
     </main>
   );
 }
