@@ -8,6 +8,7 @@ import RoadmapSection from "./RoadmapSection";
 import IndustrySection from "./IndustrySection";
 import PricingSection from "./PricingSection";
 import AccessPortal from "./AccessPortal";
+import FaqSection from "./FaqSection";
 import Footer from "./Footer";
 import AmbientMusic from "./AmbientMusic";
 
@@ -27,6 +28,8 @@ export default function LandingShell() {
       <PricingSection />
       <TronDivider />
       <AccessPortal />
+      <TronDivider />
+      <FaqSection />
       <Footer />
       <AmbientMusic src="/audio/eve-theme.wav" credit="DJ Andy'K" creditUrl="https://www.djandykofficial.com" />
     </main>
