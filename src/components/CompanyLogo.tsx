@@ -16,12 +16,12 @@ export default function CompanyLogo({
       <LogoIcon className={`${config.icon} text-current`} />
       <div className="leading-[1.15]">
         <span className={`block ${config.name} font-bold tracking-tight`}>
-          Andy&apos;K Group
+          E.V.E.
         </span>
         <span
           className={`block ${config.sub} font-light tracking-[0.08em] opacity-60 uppercase`}
         >
-          International
+          Intelligence System
         </span>
       </div>
     </div>

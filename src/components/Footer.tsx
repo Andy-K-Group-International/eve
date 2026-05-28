@@ -14,18 +14,13 @@ export default function Footer() {
 
   const footerLinks = [
     { label: t.footer.linkHome, href: "#hero" },
-    { label: "End-to-End", href: "#end-to-end" },
-    { label: t.footer.linkSystems, href: "#systems" },
-    { label: "B2G / Public Sector", href: "#pricing-b2g" },
+    { label: "Features", href: "#end-to-end" },
     { label: t.footer.linkContact, href: "#contact" },
-    { label: "Implementation Philosophy", href: "/implementation-philosophy" },
-    { label: "What is A.D.A.M.", href: "/what-is-adam" },
     { label: t.footer.linkPrivacy, href: "/privacy-policy" },
     { label: t.footer.linkCookies, href: "/cookies-policy" },
     { label: t.footer.linkTerms, href: "/terms-and-conditions" },
     { label: t.footer.linkDisclaimer, href: "/disclaimer" },
     { label: t.footer.linkLegalNotice, href: "/company-information" },
-    { label: t.footer.linkClientPortal, href: "https://adam.andykgroup.com" },
   ];
 
   return (
@@ -35,9 +30,14 @@ export default function Footer() {
           <a href="#hero" className="text-foreground">
             <CompanyLogo size="sm" />
           </a>
-          <span className="text-xs text-muted-2">
-            {t.footer.copyright} {COMPANY.name}
-          </span>
+          <div className="flex flex-col">
+            <span className="text-xs font-medium text-foreground">
+              E.V.E. Intelligence System
+            </span>
+            <span className="text-xs text-muted-2">
+              {t.footer.copyright} By Andy&apos;K Group International LTD
+            </span>
+          </div>
         </div>
 
         <div className="flex items-center gap-6 flex-wrap justify-center">
@@ -85,16 +85,7 @@ export default function Footer() {
       </div>
       <div className="max-w-[1200px] mx-auto mt-6 pt-6 border-t border-grid-300 text-center">
         <p className="text-xs text-muted-2">
-          Official record label for{" "}
-          <a
-            href="https://djandyk-landing.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline transition-colors"
-            style={{ color: "#5CB198" }}
-          >
-            DJ Andy&apos;K
-          </a>
+          E.V.E. is the intelligence and execution layer of the Andy&apos;K Group ecosystem.
         </p>
       </div>
     </footer>

@@ -52,44 +52,15 @@ export default function Navbar() {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout>>(null);
 
-  // Translated nav links
+  // Nav links
   const navLinks = [
-    { label: t.nav.about, href: "#about" },
-    { label: t.nav.caseStudies, href: "#case-studies" },
+    { label: t.nav.features, href: "#end-to-end" },
+    { label: t.nav.intelligence, href: "#about" },
     { label: t.nav.pricing, href: "#pricing" },
     { label: t.nav.contact, href: "#contact" },
   ];
 
-  // Translated services dropdown
-  const navServices = [
-    {
-      group: t.nav.groupSystems,
-      isIT: false,
-      items: [
-        { label: "A.D.A.M.", description: t.nav.adamDesc, href: "#systems" },
-      ],
-    },
-    {
-      group: t.nav.groupBusiness,
-      isIT: false,
-      items: [
-        { label: t.nav.endToEnd, description: t.nav.endToEndDesc, href: "#end-to-end" },
-        { label: t.nav.b2gPublic, description: t.nav.b2gPublicDesc, href: "#pricing-b2g" },
-      ],
-    },
-    {
-      group: t.nav.groupIT,
-      isIT: true,
-      items: [
-        { label: t.nav.sysArch, description: t.nav.sysArchDesc, href: "#pricing-tech" },
-        { label: t.nav.platformDev, description: t.nav.platformDevDesc, href: "#pricing-tech" },
-        { label: t.nav.automation, description: t.nav.automationDesc, href: "#pricing-tech" },
-        { label: t.nav.cto, description: t.nav.ctoDesc, href: "#pricing-tech" },
-      ],
-    },
-  ];
-
-  // Close dropdown when clicking outside
+  // Close dropdown when clicking outside (kept for potential future use)
   useEffect(() => {
     function handleClick(e: MouseEvent) {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
@@ -137,8 +108,8 @@ export default function Navbar() {
         {/* Logo */}
         <a href={logoHref} className="shrink-0 text-foreground">
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <img src="/images/andyk-logo.png" alt="Andy'K Group" style={{ height: '44px', width: 'auto' }} />
-            <span style={{ fontWeight: 700, fontSize: '1rem', color: '#01011b', fontFamily: 'IBM Plex Sans, sans-serif' }}>Andy&apos;K Group</span>
+            <img src="/images/eve-logo.png" alt="E.V.E." style={{ height: '44px', width: 'auto' }} />
+            <span style={{ fontWeight: 700, fontSize: '1rem', color: '#1B1F3A', fontFamily: 'IBM Plex Sans, sans-serif' }}>E.V.E.</span>
           </div>
         </a>
 
@@ -149,57 +120,10 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-
-          {/* Services dropdown */}
-          <div
-            ref={dropdownRef}
-            className="relative"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            <button
-              onClick={() => setServicesOpen(!servicesOpen)}
-              className="flex items-center gap-1 hover:text-foreground transition-colors"
-            >
-              {t.nav.services}
-              <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`} />
-            </button>
-
-            {/* Dropdown panel */}
-            {servicesOpen && (
-              <div className="absolute top-full right-0 mt-2 w-[540px] bg-white rounded-xl border border-grid-300 shadow-lg p-6 grid grid-cols-2 gap-6">
-                {navServices.map((group) => (
-                  <div key={group.group} className={group.isIT ? "col-span-2" : ""}>
-                    <p className="text-[10px] uppercase tracking-widest text-muted-2 font-medium mb-3">
-                      {group.group}
-                    </p>
-                    <div className={group.isIT ? "grid grid-cols-2 gap-2" : "space-y-2"}>
-                      {group.items.map((item) => (
-                        <a
-                          key={item.href + item.label}
-                          href={resolveHref(item.href, isHome)}
-                          onClick={() => setServicesOpen(false)}
-                          className="block p-2.5 -mx-1 rounded-lg hover:bg-bg-light transition-colors group/item"
-                        >
-                          <span className="text-sm font-medium text-foreground group-hover/item:text-highlight transition-colors">
-                            {item.label}
-                          </span>
-                          <span className="block text-xs text-muted-2 mt-0.5">
-                            {item.description}
-                          </span>
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-
         </div>
 
-        {/* Language & Currency selectors */}
-        <div className="hidden md:flex items-center gap-1.5">
+        {/* Language & Currency selectors + CTA */}
+        <div className="hidden md:flex items-center gap-2">
           <select
             value={locale}
             onChange={(e) => setLocale(e.target.value as Locale)}
@@ -225,6 +149,12 @@ export default function Navbar() {
               </option>
             ))}
           </select>
+          <a
+            href={resolveHref("#contact", isHome)}
+            className="relative inline-flex items-center justify-center h-8 px-4 text-xs font-medium text-foreground btn-primary-gradient ml-1"
+          >
+            <span className="relative z-10">{t.nav.ctaAccess}</span>
+          </a>
         </div>
 
         {/* Mobile hamburger */}
@@ -252,48 +182,19 @@ export default function Navbar() {
               </a>
             ))}
 
-            {/* Services accordion */}
-            <div className="border-b border-grid-300">
-              <button
-                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                className="flex items-center justify-between w-full py-3 text-base font-medium text-foreground"
+            {/* Mobile CTA */}
+            <div className="pt-4 pb-2">
+              <a
+                href={resolveHref("#contact", isHome)}
+                onClick={closeMobile}
+                className="relative inline-flex items-center justify-center w-full h-11 px-5 text-sm font-medium text-foreground btn-primary-gradient"
               >
-                {t.nav.services}
-                <ChevronDown className={`w-5 h-5 text-muted transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`} />
-              </button>
-
-              {mobileServicesOpen && (
-                <div className="pb-4 space-y-5">
-                  {navServices.map((group) => (
-                    <div key={group.group}>
-                      <p className="text-[10px] uppercase tracking-widest text-muted-2 font-medium mb-2 px-2">
-                        {group.group}
-                      </p>
-                      <div className="space-y-1">
-                        {group.items.map((item) => (
-                          <a
-                            key={item.href + item.label}
-                            href={resolveHref(item.href, isHome)}
-                            onClick={closeMobile}
-                            className="block px-3 py-2.5 rounded-lg hover:bg-bg-light transition-colors"
-                          >
-                            <span className="text-sm font-medium text-foreground">
-                              {item.label}
-                            </span>
-                            <span className="block text-xs text-muted-2 mt-0.5">
-                              {item.description}
-                            </span>
-                          </a>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
+                <span className="relative z-10">{t.nav.ctaAccess}</span>
+              </a>
             </div>
 
             {/* Mobile Language & Currency */}
-            <div className="pt-4 flex items-center gap-2">
+            <div className="pt-2 flex items-center gap-2">
               <select
                 value={locale}
                 onChange={(e) => setLocale(e.target.value as Locale)}

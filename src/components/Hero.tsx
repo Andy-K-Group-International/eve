@@ -16,11 +16,11 @@ export default function Hero() {
 
   return (
     <section id="hero" className="text-center py-20 px-8 max-w-[900px] mx-auto">
-      <img src="/images/andyk-logo.png" alt="Andy'K Group" style={{ height: "120px", width: "auto", margin: "0 auto 16px", display: "block" }} />
+      <img src="/images/eve-logo.png" alt="E.V.E." style={{ height: "120px", width: "auto", margin: "0 auto 16px", display: "block" }} />
       <h1 className="gradient-text font-bold tracking-tight leading-[1.2] text-[clamp(2.375rem,1.6rem+2.75vw,3.75rem)] mb-6">
-        <span className="block">Andy&apos;K Group</span>
+        <span className="block">E.V.E.</span>
         <span className="block font-serif font-light italic text-[1.3em]">
-          International
+          Intelligence System
         </span>
       </h1>
       <p className="text-xl leading-relaxed text-muted font-light max-w-[620px] mx-auto mb-3">

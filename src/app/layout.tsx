@@ -20,30 +20,30 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 const SITE_URL = "https://andykgroup.com";
 const SITE_TITLE =
-  "Andy'K Group | End-to-End Business Architecture & Operational Implementation";
+  "E.V.E. — Intelligence System by Andy'K Group International LTD";
 const SITE_DESCRIPTION =
-  "Andy'K Group eliminates operational chaos across onboarding, implementation, and lifecycle management. Operational implementation architecture for growth-stage companies — powered by A.D.A.M.";
+  "E.V.E. is the execution and validation intelligence layer of the Andy'K Group ecosystem. Strategic data, operational insight, and implementation intelligence.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: SITE_TITLE,
-    template: "%s | Andy'K Group",
+    template: "%s | E.V.E.",
   },
   description: SITE_DESCRIPTION,
   keywords: [
-    "operational implementation architecture",
-    "business architecture",
-    "operational chaos elimination",
-    "implementation-first business operations",
-    "business operating system",
-    "structured implementation lifecycle",
-    "public sector expansion",
-    "government procurement strategy",
-    "B2G tenders",
-    "A.D.A.M. operational platform",
+    "E.V.E. intelligence system",
+    "execution and validation architecture",
+    "operational intelligence",
+    "implementation intelligence",
+    "strategic data",
     "Andy'K Group International LTD",
-    "UK operational implementation",
+    "business intelligence platform",
+    "operational insight",
+    "execution management",
+    "validation architecture",
+    "intelligence layer",
+    "UK intelligence system",
   ],
   authors: [{ name: "Andy'K Group International LTD" }],
   creator: "Andy'K Group International LTD",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_GB",
     url: SITE_URL,
-    siteName: "Andy'K Group International LTD",
+    siteName: "E.V.E. — Intelligence System",
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
     images: [
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Andy'K Group International LTD — End-to-End Business Development Architecture",
+        alt: "E.V.E. — Intelligence System by Andy'K Group International LTD",
       },
     ],
   },

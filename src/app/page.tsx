@@ -13,7 +13,6 @@ import IntegrationsSection from "@/components/IntegrationsSection";
 import ContactForm from "@/components/ContactForm";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
-import FlagshipSystems from "@/components/FlagshipSystems";
 import { HeroBackground } from "@/components/BackgroundGrid";
 
 const jsonLd = {
@@ -29,7 +28,7 @@ const jsonLd = {
         url: "https://andykgroup.com/full-logo.png",
       },
       description:
-        "End-to-End Business Architecture & Operational Implementation. We eliminate operational chaos across onboarding, implementation, and lifecycle management. A.D.A.M. structures operations. Humans make strategic decisions.",
+        "E.V.E. is the intelligence and execution layer of the Andy'K Group ecosystem. Strategic data, operational insight, and implementation intelligence.",
       address: {
         "@type": "PostalAddress",
         streetAddress: "86-90 Paul Street",
@@ -42,33 +41,15 @@ const jsonLd = {
       sameAs: ["https://www.linkedin.com/company/80971657/"],
       hasOfferCatalog: {
         "@type": "OfferCatalog",
-        name: "Business Development & Operating System Services",
+        name: "E.V.E. Intelligence System Services",
         itemListElement: [
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "End-to-End Business Development",
+              name: "E.V.E. Intelligence Layer",
               description:
-                "Strategic business development architecture from foundation to scalable growth — aligning strategy, revenue, operations, and execution into one system.",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Public Sector Expansion & Government Procurement Strategy",
-              description:
-                "B2G procurement intelligence, tender architecture, EU tender support, and consortium structuring for companies expanding into public markets.",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "A.D.A.M. — Operational Implementation Platform",
-              description:
-                "Structured operational platform for proposals, contracts, client lifecycle management, and implementation delivery. A.D.A.M. structures operations. Humans make strategic decisions.",
+                "The execution and validation intelligence layer — strategic data, operational insight, and implementation intelligence for the Andy'K Group ecosystem.",
             },
           },
         ],
@@ -78,7 +59,7 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": "https://andykgroup.com/#website",
       url: "https://andykgroup.com",
-      name: "Andy'K Group International LTD",
+      name: "E.V.E. — Intelligence System",
       publisher: {
         "@id": "https://andykgroup.com/#organization",
       },
@@ -87,7 +68,7 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://andykgroup.com/#webpage",
       url: "https://andykgroup.com",
-      name: "Andy'K Group | End-to-End Business Architecture & Operational Implementation",
+      name: "E.V.E. — Intelligence System by Andy'K Group International LTD",
       isPartOf: {
         "@id": "https://andykgroup.com/#website",
       },
@@ -95,7 +76,7 @@ const jsonLd = {
         "@id": "https://andykgroup.com/#organization",
       },
       description:
-        "Andy'K Group designs and operates end-to-end operational implementation systems, public sector expansion strategies, and structured business architecture for growth-stage companies.",
+        "E.V.E. is the execution and validation intelligence layer of the Andy'K Group ecosystem. Strategic data, operational insight, and implementation intelligence.",
     },
   ],
 };
@@ -148,11 +129,6 @@ export default function Home() {
 
       <TronDivider />
 
-      {/* A.D.A.M. & E.V.E. Flagship Systems */}
-      <FlagshipSystems />
-
-      <TronDivider />
-
       {/* How A.D.A.M. Works */}
       <RoadmapSection />
 
@@ -161,7 +137,7 @@ export default function Home() {
       <ContactForm />
       <CtaSection />
       <Footer />
-      <AmbientMusic src="/audio/andyk-theme.wav" credit="DJ Andy'K" creditUrl="https://www.djandykofficial.com" />
+      <AmbientMusic src="/audio/eve-theme.wav" credit="E.V.E." creditUrl="#hero" />
     </main>
   );
 }

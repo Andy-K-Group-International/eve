@@ -1,5 +1,5 @@
 /**
- * Multi-language translations for Andy'K Group landing page
+ * Multi-language translations for E.V.E. Intelligence System landing page
  *
  * Supported languages:
  * - en: English (default)
@@ -18,13 +18,13 @@ export type Locale = "en" | "es" | "sk" | "nl" | "pt" | "de";
 const en = {
   // Company information
   company: {
-    name: "Andy'K Group International LTD",
-    tagline: "End-to-End Business Architecture & Operational Implementation",
-    subtitle: "Operational Implementation Architecture · Business Operating Systems",
-    subtitleLine2: "A.D.A.M. structures operations. Humans make strategic decisions.",
-    description: "Andy'K Group International LTD is a UK-based operational implementation architecture company — eliminating operational chaos across onboarding, implementation, and lifecycle management.",
+    name: "E.V.E.",
+    tagline: "Intelligence System",
+    subtitle: "Execution & Validation Architecture",
+    subtitleLine2: "E.V.E. is the intelligence layer. Humans make strategic decisions.",
+    description: "E.V.E. is the intelligence and execution layer of the Andy'K Group ecosystem. Strategic data, operational insight, and implementation intelligence.",
     descriptionExtra: "With clients across Europe and Latin America, we build structured implementation environments where strategy, operations, and technology move in one direction.",
-    descriptionSystems: "Operational implementation services combining structured delivery, business architecture, and technology — helping companies achieve operational clarity at scale.",
+    descriptionSystems: "E.V.E. is the intelligence and execution layer of the Andy'K Group ecosystem. Strategic data, operational insight, and implementation intelligence.",
     quote: "One structure. One flow. One system.",
     quoteSubtitle: "Built for operational clarity.",
     location: "London, UK",
@@ -33,7 +33,7 @@ const en = {
 
   // Hero section
   hero: {
-    ctaPrimary: "Tell Us About You",
+    ctaPrimary: "Request Intelligence Access",
     ctaSecondary: "Learn How We Work",
     emailPlaceholder: "Your email address",
     getInContact: "Get in Contact",
@@ -319,10 +319,13 @@ const en = {
 
   // Navigation
   nav: {
+    features: "Features",
+    intelligence: "Intelligence",
     about: "About",
     caseStudies: "Case Studies",
     pricing: "Pricing",
     contact: "Contact",
+    ctaAccess: "Request Intelligence Access",
     services: "Services",
     groupSystems: "Systems",
     groupBusiness: "Business Services",
@@ -414,13 +417,13 @@ const en = {
 // Spanish translations (formal - usted)
 const es: typeof en = {
   company: {
-    name: "Andy'K Group International LTD",
-    tagline: "Arquitectura Empresarial Integral e Implementación Operativa",
-    subtitle: "Arquitectura de Implementación Operativa · Sistemas Operativos Empresariales",
-    subtitleLine2: "A.D.A.M. estructura las operaciones. Los humanos toman decisiones estratégicas.",
-    description: "Andy'K Group International LTD es una empresa de arquitectura de implementación operativa con sede en el Reino Unido — eliminando el caos operativo en incorporación, implementación y gestión del ciclo de vida.",
+    name: "E.V.E.",
+    tagline: "Sistema de Inteligencia",
+    subtitle: "Arquitectura de Ejecución y Validación",
+    subtitleLine2: "E.V.E. es la capa de inteligencia. Los humanos toman decisiones estratégicas.",
+    description: "E.V.E. es la capa de inteligencia y ejecución del ecosistema de Andy'K Group. Datos estratégicos, perspectiva operativa e inteligencia de implementación.",
     descriptionExtra: "Con clientes en toda Europa y América Latina, construimos entornos de implementación estructurados donde la estrategia, las operaciones y la tecnología avanzan en una sola dirección.",
-    descriptionSystems: "Servicios de implementación operativa que combinan entrega estructurada, arquitectura empresarial y tecnología — ayudando a empresas a lograr claridad operativa a escala.",
+    descriptionSystems: "E.V.E. es la capa de inteligencia y ejecución del ecosistema de Andy'K Group. Datos estratégicos, perspectiva operativa e inteligencia de implementación.",
     quote: "Una estructura. Un flujo. Un sistema.",
     quoteSubtitle: "Construido para la claridad operativa.",
     location: "Londres, Reino Unido",
@@ -428,7 +431,7 @@ const es: typeof en = {
   },
 
   hero: {
-    ctaPrimary: "Cuéntenos sobre usted",
+    ctaPrimary: "Solicitar Acceso de Inteligencia",
     ctaSecondary: "Descubra cómo trabajamos",
     emailPlaceholder: "Su dirección de correo electrónico",
     getInContact: "Contáctenos",
@@ -683,10 +686,13 @@ const es: typeof en = {
   },
 
   nav: {
+    features: "Funciones",
+    intelligence: "Inteligencia",
     about: "Acerca de",
     caseStudies: "Casos de estudio",
     pricing: "Precios",
     contact: "Contacto",
+    ctaAccess: "Solicitar Acceso de Inteligencia",
     services: "Servicios",
     groupSystems: "Sistemas",
     groupBusiness: "Servicios empresariales",
@@ -767,13 +773,13 @@ const es: typeof en = {
 // Slovak translations
 const sk: typeof en = {
   company: {
-    name: "Andy'K Group International LTD",
-    tagline: "Komplexná Obchodná Architektúra a Operatívna Implementácia",
-    subtitle: "Architektúra Operatívnej Implementácie · Obchodné Prevádzkové Systémy",
-    subtitleLine2: "A.D.A.M. štruktúruje operácie. Ľudia prijímajú strategické rozhodnutia.",
-    description: "Andy'K Group International LTD je spoločnosť architektúry operatívnej implementácie so sídlom vo Veľkej Británii — eliminujúca prevádzkový chaos v onboardingu, implementácii a riadení životného cyklu.",
+    name: "E.V.E.",
+    tagline: "Systém Inteligencie",
+    subtitle: "Architektúra Vykonávania a Validácie",
+    subtitleLine2: "E.V.E. je vrstva inteligencie. Ľudia prijímajú strategické rozhodnutia.",
+    description: "E.V.E. je vrstva inteligencie a vykonávania ekosystému Andy'K Group. Strategické dáta, prevádzkový prehľad a implementačná inteligencia.",
     descriptionExtra: "S klientmi po celej Európe a Latinskej Amerike budujeme štruktúrované implementačné prostredia, kde stratégia, prevádzka a technológia smerujú jedným smerom.",
-    descriptionSystems: "Služby operatívnej implementácie kombinujúce štruktúrované dodávky, obchodnú architektúru a technológiu — pomáhajúce spoločnostiam dosiahnuť prevádzkovú jasnosť v škálovaní.",
+    descriptionSystems: "E.V.E. je vrstva inteligencie a vykonávania ekosystému Andy'K Group. Strategické dáta, prevádzkový prehľad a implementačná inteligencia.",
     quote: "Jedna štruktúra. Jeden tok. Jeden systém.",
     quoteSubtitle: "Vytvorené pre prevádzkovú jasnosť.",
     location: "Londýn, Veľká Británia",
@@ -781,7 +787,7 @@ const sk: typeof en = {
   },
 
   hero: {
-    ctaPrimary: "Povedzte nám o sebe",
+    ctaPrimary: "Požiadať o Prístup k Inteligencii",
     ctaSecondary: "Zistite, ako pracujeme",
     emailPlaceholder: "Vaša e-mailová adresa",
     getInContact: "Kontaktujte nás",
@@ -1036,10 +1042,13 @@ const sk: typeof en = {
   },
 
   nav: {
+    features: "Funkcie",
+    intelligence: "Inteligencia",
     about: "O nás",
     caseStudies: "Prípadové štúdie",
     pricing: "Ceny",
     contact: "Kontakt",
+    ctaAccess: "Požiadať o Prístup k Inteligencii",
     services: "Služby",
     groupSystems: "Systémy",
     groupBusiness: "Obchodné služby",
@@ -1120,13 +1129,13 @@ const sk: typeof en = {
 // Dutch translations
 const nl: typeof en = {
   company: {
-    name: "Andy'K Group International LTD",
-    tagline: "End-to-End Bedrijfsarchitectuur & Operationele Implementatie",
-    subtitle: "Operationele Implementatiearchitectuur · Bedrijfsbesturingssystemen",
-    subtitleLine2: "A.D.A.M. structureert operaties. Mensen nemen strategische beslissingen.",
-    description: "Andy'K Group International LTD is een in het VK gevestigd bedrijf voor operationele implementatiearchitectuur — dat operationele chaos elimineert in onboarding, implementatie en lifecycle management.",
+    name: "E.V.E.",
+    tagline: "Intelligentiesysteem",
+    subtitle: "Uitvoerings- en Validatiearchitectuur",
+    subtitleLine2: "E.V.E. is de intelligentielaag. Mensen nemen strategische beslissingen.",
+    description: "E.V.E. is de intelligentie- en uitvoeringslaag van het Andy'K Group-ecosysteem. Strategische data, operationeel inzicht en implementatie-intelligentie.",
     descriptionExtra: "Met klanten in heel Europa en Latijns-Amerika bouwen we gestructureerde implementatieomgevingen waar strategie, operaties en technologie in één richting bewegen.",
-    descriptionSystems: "Operationele implementatiediensten die gestructureerde levering, bedrijfsarchitectuur en technologie combineren — bedrijven helpen operationele helderheid op schaal te bereiken.",
+    descriptionSystems: "E.V.E. is de intelligentie- en uitvoeringslaag van het Andy'K Group-ecosysteem. Strategische data, operationeel inzicht en implementatie-intelligentie.",
     quote: "Eén structuur. Eén stroom. Eén systeem.",
     quoteSubtitle: "Gebouwd voor operationele helderheid.",
     location: "Londen, VK",
@@ -1134,7 +1143,7 @@ const nl: typeof en = {
   },
 
   hero: {
-    ctaPrimary: "Vertel ons over uzelf",
+    ctaPrimary: "Toegang tot Intelligentie Aanvragen",
     ctaSecondary: "Ontdek hoe wij werken",
     emailPlaceholder: "Uw e-mailadres",
     getInContact: "Neem contact op",
@@ -1389,10 +1398,13 @@ const nl: typeof en = {
   },
 
   nav: {
+    features: "Functies",
+    intelligence: "Intelligentie",
     about: "Over ons",
     caseStudies: "Casestudies",
     pricing: "Tarieven",
     contact: "Contact",
+    ctaAccess: "Toegang tot Intelligentie Aanvragen",
     services: "Diensten",
     groupSystems: "Systemen",
     groupBusiness: "Zakelijke diensten",
@@ -1473,13 +1485,13 @@ const nl: typeof en = {
 // Portuguese translations
 const pt: typeof en = {
   company: {
-    name: "Andy'K Group International LTD",
-    tagline: "Arquitetura Empresarial Completa e Implementação Operacional",
-    subtitle: "Arquitetura de Implementação Operacional · Sistemas Operacionais Empresariais",
-    subtitleLine2: "A.D.A.M. estrutura as operações. Os humanos tomam decisões estratégicas.",
-    description: "Andy'K Group International LTD é uma empresa de arquitetura de implementação operacional sediada no Reino Unido — eliminando o caos operacional em onboarding, implementação e gestão do ciclo de vida.",
+    name: "E.V.E.",
+    tagline: "Sistema de Inteligência",
+    subtitle: "Arquitetura de Execução e Validação",
+    subtitleLine2: "E.V.E. é a camada de inteligência. Os humanos tomam decisões estratégicas.",
+    description: "E.V.E. é a camada de inteligência e execução do ecossistema Andy'K Group. Dados estratégicos, perspectiva operacional e inteligência de implementação.",
     descriptionExtra: "Com clientes em toda a Europa e América Latina, construímos ambientes de implementação estruturados onde estratégia, operações e tecnologia avançam numa só direção.",
-    descriptionSystems: "Serviços de implementação operacional combinando entrega estruturada, arquitetura empresarial e tecnologia — ajudando empresas a alcançar clareza operacional em escala.",
+    descriptionSystems: "E.V.E. é a camada de inteligência e execução do ecossistema Andy'K Group. Dados estratégicos, perspectiva operacional e inteligência de implementação.",
     quote: "Uma estrutura. Um fluxo. Um sistema.",
     quoteSubtitle: "Construído para clareza operacional.",
     location: "Londres, Reino Unido",
@@ -1487,7 +1499,7 @@ const pt: typeof en = {
   },
 
   hero: {
-    ctaPrimary: "Conte-nos sobre você",
+    ctaPrimary: "Solicitar Acesso de Inteligência",
     ctaSecondary: "Saiba como trabalhamos",
     emailPlaceholder: "Seu endereço de e-mail",
     getInContact: "Entre em contato",
@@ -1742,10 +1754,13 @@ const pt: typeof en = {
   },
 
   nav: {
+    features: "Funcionalidades",
+    intelligence: "Inteligência",
     about: "Sobre",
     caseStudies: "Estudos de caso",
     pricing: "Preços",
     contact: "Contato",
+    ctaAccess: "Solicitar Acesso de Inteligência",
     services: "Serviços",
     groupSystems: "Sistemas",
     groupBusiness: "Serviços empresariais",
@@ -1826,13 +1841,13 @@ const pt: typeof en = {
 // German translations (formal - Sie)
 const de: typeof en = {
   company: {
-    name: "Andy'K Group International LTD",
-    tagline: "End-to-End-Unternehmensarchitektur & Operative Implementierung",
-    subtitle: "Operative Implementierungsarchitektur · Business Operating Systems",
-    subtitleLine2: "A.D.A.M. strukturiert den Betrieb. Menschen treffen strategische Entscheidungen.",
-    description: "Andy'K Group International LTD ist ein in Großbritannien ansässiges Unternehmen für operative Implementierungsarchitektur — das operatives Chaos in Onboarding, Implementierung und Lifecycle-Management eliminiert.",
+    name: "E.V.E.",
+    tagline: "Intelligence-System",
+    subtitle: "Ausführungs- und Validierungsarchitektur",
+    subtitleLine2: "E.V.E. ist die Intelligenzschicht. Menschen treffen strategische Entscheidungen.",
+    description: "E.V.E. ist die Intelligenz- und Ausführungsschicht des Andy'K Group-Ökosystems. Strategische Daten, operative Einblicke und Implementierungsintelligenz.",
     descriptionExtra: "Mit Kunden in ganz Europa und Lateinamerika bauen wir strukturierte Implementierungsumgebungen, in denen Strategie, Betrieb und Technologie in eine Richtung bewegen.",
-    descriptionSystems: "Operative Implementierungsdienstleistungen, die strukturierte Lieferung, Unternehmensarchitektur und Technologie kombinieren — Unternehmen helfen, operative Klarheit in der Skalierung zu erreichen.",
+    descriptionSystems: "E.V.E. ist die Intelligenz- und Ausführungsschicht des Andy'K Group-Ökosystems. Strategische Daten, operative Einblicke und Implementierungsintelligenz.",
     quote: "Eine Struktur. Ein Ablauf. Ein System.",
     quoteSubtitle: "Gebaut für operative Klarheit.",
     location: "London, Großbritannien",
@@ -1840,7 +1855,7 @@ const de: typeof en = {
   },
 
   hero: {
-    ctaPrimary: "Erzählen Sie uns von sich",
+    ctaPrimary: "Intelligence-Zugang Anfragen",
     ctaSecondary: "Erfahren Sie, wie wir arbeiten",
     emailPlaceholder: "Ihre E-Mail-Adresse",
     getInContact: "Kontakt aufnehmen",
@@ -2095,10 +2110,13 @@ const de: typeof en = {
   },
 
   nav: {
+    features: "Funktionen",
+    intelligence: "Intelligenz",
     about: "Über uns",
     caseStudies: "Fallstudien",
     pricing: "Preise",
     contact: "Kontakt",
+    ctaAccess: "Intelligence-Zugang Anfragen",
     services: "Dienstleistungen",
     groupSystems: "Systeme",
     groupBusiness: "Geschäftsdienstleistungen",

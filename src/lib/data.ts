@@ -1,13 +1,13 @@
 export const COMPANY = {
-  name: "Andy'K Group International LTD",
-  tagline: "End-to-end business architecture & operational implementation.",
-  subtitle: "We eliminate operational chaos across onboarding, implementation and lifecycle management — powered by A.D.A.M. and structured delivery.",
+  name: "E.V.E.",
+  tagline: "Intelligence System",
+  subtitle: "Execution & Validation Architecture",
   description:
-    "Andy'K Group International LTD is a UK-based operational implementation architecture company — eliminating operational chaos across onboarding, implementation, and lifecycle management.",
+    "E.V.E. is the intelligence and execution layer of the Andy'K Group ecosystem. Strategic data, operational insight, and implementation intelligence.",
   descriptionExtra:
     "With clients across Europe and Latin America, we build structured implementation environments where strategy, operations, and technology move in one direction.",
   descriptionSystems:
-    "Operational implementation services combining structured delivery, business architecture, and technology — helping companies achieve operational clarity at scale.",
+    "E.V.E. is the intelligence and execution layer of the Andy'K Group ecosystem. Strategic data, operational insight, and implementation intelligence.",
   companyNumber: "16453500",
   address: "86–90 Paul Street, London, EC2A 4NE, United Kingdom",
   phone: "+44 330 027 1319",
@@ -289,8 +289,8 @@ export const BILLING_TERMS = {
 };
 
 export const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Case Studies", href: "#case-studies" },
+  { label: "Features", href: "#end-to-end" },
+  { label: "Intelligence", href: "#about" },
   { label: "Pricing", href: "#pricing" },
   { label: "Contact", href: "#contact" },
 ];
@@ -340,7 +340,7 @@ export const CASE_STUDIES = [
 
 export const FOOTER_LINKS = [
   { label: "Home", href: "#hero" },
-  { label: "A.D.A.M. & E.V.E.", href: "#systems" },
+  { label: "Features", href: "#end-to-end" },
   { label: "Pricing", href: "#pricing" },
   { label: "Contact", href: "#contact" },
   { label: "Privacy Policy", href: "/privacy-policy" },
