@@ -1,0 +1,2190 @@
+/**
+ * Multi-language translations for Andy'K Group landing page
+ *
+ * Supported languages:
+ * - en: English (default)
+ * - es: Spanish (formal - usted)
+ * - sk: Slovak
+ * - nl: Dutch
+ * - pt: Portuguese
+ * - de: German (formal - Sie)
+ *
+ * Brand names remain unchanged: Andy'K Group International LTD, A.D.A.M., E.V.E.
+ */
+
+export type Locale = "en" | "es" | "sk" | "nl" | "pt" | "de";
+
+// English translations (source of truth)
+const en = {
+  // Company information
+  company: {
+    name: "Andy'K Group International LTD",
+    tagline: "End-to-End Business Architecture & Operational Implementation",
+    subtitle: "Operational Implementation Architecture · Business Operating Systems",
+    subtitleLine2: "A.D.A.M. structures operations. Humans make strategic decisions.",
+    description: "Andy'K Group International LTD is a UK-based operational implementation architecture company — eliminating operational chaos across onboarding, implementation, and lifecycle management.",
+    descriptionExtra: "With clients across Europe and Latin America, we build structured implementation environments where strategy, operations, and technology move in one direction.",
+    descriptionSystems: "Operational implementation services combining structured delivery, business architecture, and technology — helping companies achieve operational clarity at scale.",
+    quote: "One structure. One flow. One system.",
+    quoteSubtitle: "Built for operational clarity.",
+    location: "London, UK",
+    ukCompany: "UK Limited Company",
+  },
+
+  // Hero section
+  hero: {
+    ctaPrimary: "Tell Us About You",
+    ctaSecondary: "Learn How We Work",
+    emailPlaceholder: "Your email address",
+    getInContact: "Get in Contact",
+  },
+
+  // Top banner
+  banner: {
+    opLead: "Operational Architecture:",
+    opText: "structured implementation lifecycle & operational clarity",
+    adamSystem: "A.D.A.M. System:",
+    adamText: "operational implementation platform — structured delivery & client lifecycle",
+    b2gTender: "B2G Tender Strategy:",
+    b2gText: "procurement intelligence & public sector expansion",
+    trusted: "Trusted across:",
+    trustedText: "LATAM, Benelux, DACH & US",
+  },
+
+  // Services section (Our Services grid)
+  services: {
+    heading: "Our",
+    headingItalic: "services",
+    subtitle: "Operational implementation services — combining structured delivery, business architecture, and technology.",
+    items: [
+      {
+        title: "End-to-End",
+        description: "Strategic implementation partnership — operational transformation engagement, selective by application",
+      },
+      {
+        title: "B2G",
+        description: "Public sector strategy, tender advisory & procurement",
+      },
+      {
+        title: "IT Services",
+        description: "System architecture, platform development & automation",
+      },
+    ],
+  },
+
+  // End-to-End section
+  endToEnd: {
+    heading: "Strategic Implementation",
+    headingItalic: "Partnership",
+    description: "We eliminate operational chaos across onboarding, implementation, and lifecycle management. A selective engagement — structured rollout, implementation-first. A.D.A.M. structures operations. Humans make strategic decisions.",
+    bullets: [
+      { title: "Operational clarity", description: "Eliminating chaos across every business layer — defining structure, accountability, and execution flow." },
+      { title: "Revenue architecture", description: "Designing pricing, monetization, and revenue flow systems built for sustainable growth." },
+      { title: "Market positioning", description: "Refining your brand, value proposition, and competitive advantage in your target market." },
+      { title: "Implementation redesign", description: "Structured implementation lifecycle — from onboarding to delivery tracking and ongoing optimization." },
+      { title: "System integration", description: "Connecting tools, platforms, and data flows into one unified operational ecosystem." },
+      { title: "Structured lifecycle control", description: "Building scalable implementation frameworks with long-term operational clarity and controlled execution." },
+    ],
+  },
+
+  // End-to-End qualification flow
+  endToEndQualification: {
+    title: "How we engage",
+    description: "Strategic Implementation Partnerships are internally reviewed and selectively approved — by application only. Structured rollout. Implementation-first. Operational clarity across every engagement.",
+    steps: [
+      "Submit Assessment",
+      "Internal Review",
+      "Strategic Fit Evaluation",
+      "Qualification Call",
+      "Proposal",
+    ],
+    ctaAssessment: "Apply for Implementation",
+    ctaReview: "Request Operational Assessment",
+  },
+
+  // Loved By / About section
+  lovedBy: {
+    headingBold: "Built on",
+    headingItalic: "structure.",
+    headingLine2: "Built to eliminate chaos.",
+    paragraph1: "Andy'K Group International LTD is a UK-based operational implementation architecture company — eliminating operational chaos and delivering structured transformation across B2G, end-to-end business architecture, and technology-driven engagements.",
+    paragraph2: "We eliminate operational chaos across onboarding, implementation and lifecycle management.",
+    paragraph3: "A.D.A.M. structures operations. E.V.E. manages execution, milestones, and delivery tracking. Humans make strategic decisions.",
+    quote: "One structure. One flow. One system.",
+    tagline: "BUILT FOR OPERATIONAL CLARITY.",
+  },
+
+  // Case Studies section
+  caseStudies: {
+    heading: "Case",
+    headingItalic: "studies",
+    cards: [
+      {
+        shortTitle: "Hospitality Operating System",
+        title: "How we solved fragmented hotel operations using our services",
+        description: "Built a full digital operating system for a hospitality group — from strategy to execution.",
+        link: "Learn More",
+      },
+      {
+        shortTitle: "Healthcare Digitalization",
+        title: "How we solved clinical workflow chaos using our services",
+        description: "Designed a structured operations system for a physiotherapy clinic, integrating A.D.A.M. Healthcare.",
+        link: "Learn More",
+      },
+      {
+        shortTitle: "Consulting Professionalization",
+        title: "How we solved inconsistent consulting delivery using our services",
+        description: "Transformed an emotional consulting practice into a structured, scalable professional service.",
+        link: "Learn More",
+      },
+    ],
+  },
+
+  // Roadmap section (A.D.A.M.)
+  roadmap: {
+    heading: "How A.D.A.M.",
+    headingItalic: "Works",
+    subtitle: "From first contact to project launch in six structured steps.",
+    steps: [
+      {
+        title: "Strategic Application",
+        description: "Submit your implementation application. We review all requests manually for strategic fit.",
+      },
+      {
+        title: "Internal Review & Qualification",
+        description: "Our team evaluates operational fit, strategic potential and implementation readiness.",
+      },
+      {
+        title: "Proposal & Strategy",
+        description: "We craft a tailored implementation proposal and operational strategy document.",
+      },
+      {
+        title: "Contract & Signing",
+        description: "Review and digitally sign your implementation agreement.",
+      },
+      {
+        title: "Invoice & Payment",
+        description: "Structured invoicing — 50% upfront, 50% on Phase 1 completion.",
+      },
+      {
+        title: "Kickoff & Implementation",
+        description: "Operational activation begins. Your A.D.A.M. environment is configured and go-live is scheduled.",
+      },
+    ],
+    statusBadge: "A.D.A.M. is live and processing clients",
+    stepLabel: "Step",
+  },
+
+  // Pricing section
+  pricing: {
+    heading: "Plans for",
+    headingItalic: "every stage",
+    subtitle: "Structured advisory and business development — combining strategy, public sector expertise, and technology infrastructure to help you scale.",
+    eyebrow: "Transparent pricing",
+    tabB2G: "B2G Public Sector",
+    tabTech: "Technology / CTO",
+    commitment: "Starting from 3 months",
+    popular: "Popular",
+    from: "from",
+    perMonth: "/ month",
+    perHour: "/ hour",
+    getStarted: "Get Started",
+    customQuote: "Need something custom? We tailor packages to your exact requirements.",
+    requestCustomQuote: "Request a Custom Quote",
+    billingBasis: "Billed monthly",
+    billingMinimum: "Initial commitment of 3\u201312 months",
+    billingRenewal: "Transitions to rolling monthly subscription after delivery",
+    billingCancellation: "15-day cancellation notice",
+
+    // B2G Plans
+    b2gStarter: {
+      name: "GovStarter",
+      features: [
+        "Procurement intelligence: 5 verified opportunities/month",
+        "Eligibility & compliance review",
+        "Tender architecture advisory",
+        "Monthly strategic consultation",
+      ],
+    },
+    b2gExpand: {
+      name: "GovExpand",
+      features: [
+        "Active public sector pipeline: 10 verified tenders",
+        "Compliance workflow review",
+        "Public sector strategy consultation",
+        "Government expansion pipeline structuring",
+      ],
+    },
+    b2gElite: {
+      name: "GovElite",
+      features: [
+        "Full bid architecture & proposal drafting",
+        "Tender roadmap & procurement strategy",
+        "Consortium structuring & partner identification",
+        "Priority strategic advisory support",
+      ],
+    },
+
+    // Tech Plans
+    techArchitecture: {
+      name: "System Architecture Consulting",
+      features: [
+        "Business system architecture design",
+        "Infrastructure planning",
+        "Automation architecture strategy",
+      ],
+    },
+    techPlatforms: {
+      name: "Business Platforms Development",
+      features: [
+        "Internal portals",
+        "Operational dashboards",
+        "Custom company systems",
+      ],
+    },
+    techAutomation: {
+      name: "Automation & Integrations",
+      features: [
+        "CRM / ERP integrations",
+        "API automation",
+        "Workflow automation systems",
+      ],
+    },
+    techAudit: {
+      name: "Technical System Audit",
+      features: [
+        "Infrastructure audit",
+        "Scalability assessment",
+        "Security baseline review",
+      ],
+    },
+    techCTO: {
+      name: "CTO-as-a-Service",
+      features: [
+        "Technical involvement",
+        "Architecture supervision",
+        "Vendor and infrastructure selection",
+        "Scaling strategy consulting",
+        "Minimum 1-month contract — limited spots",
+      ],
+    },
+  },
+
+  // CTA Section
+  cta: {
+    eyebrow: "Get in touch",
+    heading: "Let's build something",
+    headingItalic: "together.",
+    subtitle: "Whether you need operational implementation, strategic architecture, or a structured transformation partner — we're ready to review your application.",
+    ctaPrimary: "Tell Us About You",
+    ctaSecondary: "Request Operational Assessment",
+    followLinkedIn: "Follow us on LinkedIn",
+  },
+
+  // Contact form
+  contact: {
+    heading: "Send Us a Message",
+    subtitle: "Fill out the form below and we'll get back to you as soon as possible.",
+    labelName: "Full Name",
+    labelEmail: "Email Address",
+    labelCompany: "Company Name",
+    labelMessage: "Message",
+    required: "*",
+    placeholderName: "Your full name",
+    placeholderEmail: "your@email.com",
+    placeholderCompany: "Your company name",
+    placeholderMessage: "Tell us about your business goals and how we can help...",
+    buttonSend: "Send Message",
+    privacyText: "By submitting this form, you agree to our terms of service and privacy policy.",
+    successHeading: "Message prepared",
+    successText: "Your email client should have opened. If not, email us directly at info@andykgroup.com",
+  },
+
+  // Footer
+  footer: {
+    copyright: "© 2026",
+    linkHome: "Home",
+    linkSystems: "A.D.A.M. & E.V.E.",
+    linkPricing: "Pricing",
+    linkContact: "Contact",
+    linkPrivacy: "Privacy Policy",
+    linkCookies: "Cookies Policy",
+    linkTerms: "Terms of Use",
+    linkDisclaimer: "Website Disclaimer",
+    linkLegalNotice: "Legal Notice",
+    linkClientPortal: "Client Portal",
+    selectLanguage: "Language",
+    selectCurrency: "Currency",
+  },
+
+  // Navigation
+  nav: {
+    about: "About",
+    caseStudies: "Case Studies",
+    pricing: "Pricing",
+    contact: "Contact",
+    services: "Services",
+    groupSystems: "Systems",
+    groupBusiness: "Business Services",
+    groupIT: "IT Services",
+    adamDesc: "Automated Document & Account Manager",
+    endToEnd: "End-to-End",
+    endToEndDesc: "Strategic business development & growth architecture",
+    b2gPublic: "B2G Public Sector",
+    b2gPublicDesc: "Government tenders & procurement",
+    sysArch: "System Architecture",
+    sysArchDesc: "Business system design & planning",
+    platformDev: "Platform Development",
+    platformDevDesc: "Portals, dashboards & custom systems",
+    automation: "Automation & Integrations",
+    automationDesc: "CRM, ERP & workflow automation",
+    cto: "CTO-as-a-Service",
+    ctoDesc: "Technical leadership on demand",
+  },
+
+  // Founders section
+  founders: {
+    eyebrow: "The people behind it",
+    heading: "Meet the",
+    headingItalic: "founders",
+    connect: "Connect",
+    roles: [
+      "Founder & Operational Architect",
+      "Co-Founder & CTO",
+    ],
+    bios: [
+      "Fifteen+ years of leadership in operational strategy, business development, and implementation architecture. Andrej specializes in eliminating operational chaos — building structured implementation systems for B2G, operational implementation, and international client engagements.",
+      "The technical architect behind A.D.A.M., Kobe builds the operational infrastructure that makes implementation-first strategy a reality.",
+    ],
+    quotes: [
+      "My focus is building implementation systems that don't just look good on paper — they eliminate chaos, create operational clarity, and scale with structure.",
+      "",
+    ],
+    locations: [
+      "Born in Austria",
+      "Born in Belgium",
+    ],
+  },
+
+  // Case study pages
+  caseStudyPages: {
+    nextCaseStudy: "Next case study",
+    problem: "Problem",
+    solution: "Solution",
+    outcome: "Outcome",
+    hospitality: {
+      title: "Hospitality Operating System",
+      problem: "A growing hospitality group with multiple properties was running on disconnected tools, manual processes, and inconsistent guest experiences. Revenue management, staff coordination, and guest communication were fragmented across spreadsheets and ad-hoc solutions.",
+      solution: "We designed and implemented a full digital operating system — integrating reservation management, staff scheduling, guest communication, and financial oversight into one structured platform. The strategy covered operational redesign, technology selection, and team onboarding.",
+      outcome: "Unified operations across all properties. Staff efficiency improved, guest satisfaction scores increased, and the group gained clear visibility into performance metrics — all running through one system.",
+    },
+    healthcare: {
+      title: "Healthcare Digitalization",
+      problem: "A physiotherapy clinic was struggling with clinical workflow chaos — patient scheduling, treatment records, billing, and communication all handled through separate, disconnected systems. Staff spent more time on admin than patient care.",
+      solution: "We designed a structured operations system for the clinic, integrating patient management, appointment scheduling, treatment documentation, and billing into a cohesive digital workflow — with A.D.A.M. Healthcare handling the document and account management layer.",
+      outcome: "Admin time reduced significantly. Patient throughput improved. The clinic now operates with a clear, structured digital workflow that keeps clinical staff focused on care, not paperwork.",
+    },
+    consulting: {
+      title: "Consulting Professionalization",
+      problem: "A consulting practice was delivering value but inconsistently — proposals were ad-hoc, project management was reactive, and client communication depended entirely on the founder's personal relationships. The business couldn't scale without structural change.",
+      solution: "We transformed the consulting practice from an emotionally-driven operation into a structured, professional service. This included standardized proposal templates, project management workflows, client onboarding processes, and a clear service delivery framework.",
+      outcome: "The practice now delivers consistent, professional service regardless of which team member is leading. Client retention improved, referral rates increased, and the business is positioned for scalable growth.",
+    },
+  },
+
+  // Common/Shared
+  common: {
+    getStarted: "Get Started",
+    learnMore: "Learn More",
+    contactUs: "Contact Us",
+    readMore: "Read More",
+  },
+
+  // Language names
+  languages: {
+    en: "English",
+    es: "Español",
+    sk: "Slovenčina",
+    nl: "Nederlands",
+    pt: "Português",
+    de: "Deutsch",
+  },
+};
+
+// Spanish translations (formal - usted)
+const es: typeof en = {
+  company: {
+    name: "Andy'K Group International LTD",
+    tagline: "Arquitectura Empresarial Integral e Implementación Operativa",
+    subtitle: "Arquitectura de Implementación Operativa · Sistemas Operativos Empresariales",
+    subtitleLine2: "A.D.A.M. estructura las operaciones. Los humanos toman decisiones estratégicas.",
+    description: "Andy'K Group International LTD es una empresa de arquitectura de implementación operativa con sede en el Reino Unido — eliminando el caos operativo en incorporación, implementación y gestión del ciclo de vida.",
+    descriptionExtra: "Con clientes en toda Europa y América Latina, construimos entornos de implementación estructurados donde la estrategia, las operaciones y la tecnología avanzan en una sola dirección.",
+    descriptionSystems: "Servicios de implementación operativa que combinan entrega estructurada, arquitectura empresarial y tecnología — ayudando a empresas a lograr claridad operativa a escala.",
+    quote: "Una estructura. Un flujo. Un sistema.",
+    quoteSubtitle: "Construido para la claridad operativa.",
+    location: "Londres, Reino Unido",
+    ukCompany: "Empresa Limitada del Reino Unido",
+  },
+
+  hero: {
+    ctaPrimary: "Cuéntenos sobre usted",
+    ctaSecondary: "Descubra cómo trabajamos",
+    emailPlaceholder: "Su dirección de correo electrónico",
+    getInContact: "Contáctenos",
+  },
+
+  banner: {
+    opLead: "Arquitectura Operativa:",
+    opText: "ciclo de vida de implementación estructurada y claridad operativa",
+    adamSystem: "Sistema A.D.A.M.:",
+    adamText: "plataforma de implementación operativa — entrega estructurada y ciclo de vida del cliente",
+    b2gTender: "Estrategia B2G:",
+    b2gText: "inteligencia de contratación y expansión del sector público",
+    trusted: "Confianza en:",
+    trustedText: "LATAM, Benelux, DACH y EE.UU.",
+  },
+
+  services: {
+    heading: "Nuestros",
+    headingItalic: "servicios",
+    subtitle: "Servicios de implementación operativa — combinando entrega estructurada, arquitectura empresarial y tecnología.",
+    items: [
+      { title: "End-to-End", description: "Asociación de implementación estratégica — compromiso de transformación operativa, selectivo por solicitud" },
+      { title: "B2G", description: "Estrategia del sector público, asesoramiento en licitaciones y contratación" },
+      { title: "IT Services", description: "Arquitectura de sistemas, desarrollo de plataformas y automatización" },
+    ],
+  },
+
+  endToEnd: {
+    heading: "Asociación de",
+    headingItalic: "Implementación Estratégica",
+    description: "Eliminamos el caos operativo en incorporación, implementación y gestión del ciclo de vida. Un compromiso selectivo — implementación estructurada desde el primer momento. A.D.A.M. estructura las operaciones. Los humanos toman decisiones estratégicas.",
+    bullets: [
+      { title: "Claridad operativa", description: "Eliminando el caos en cada capa empresarial — definiendo estructura, responsabilidad y flujo de ejecución." },
+      { title: "Arquitectura de ingresos", description: "Diseño de sistemas de precios, monetización y flujo de ingresos para un crecimiento sostenible." },
+      { title: "Posicionamiento de mercado", description: "Refinamiento de marca, propuesta de valor y ventaja competitiva en su mercado objetivo." },
+      { title: "Rediseño de implementación", description: "Ciclo de vida de implementación estructurado — desde la incorporación hasta el seguimiento de entregas y optimización continua." },
+      { title: "Integración de sistemas", description: "Conexión de herramientas, plataformas y flujos de datos en un ecosistema operativo unificado." },
+      { title: "Control del ciclo de vida estructurado", description: "Construcción de marcos de implementación escalables con claridad operativa a largo plazo y ejecución controlada." },
+    ],
+  },
+
+  roadmap: {
+    heading: "Cómo funciona",
+    headingItalic: "A.D.A.M.",
+    subtitle: "Del primer contacto al lanzamiento del proyecto en seis pasos estructurados.",
+    steps: [
+      {
+        title: "Solicitud Estratégica",
+        description: "Envíe su solicitud de implementación. Revisamos todas las solicitudes manualmente para verificar la compatibilidad estratégica.",
+      },
+      {
+        title: "Revisión Interna y Cualificación",
+        description: "Nuestro equipo evalúa la compatibilidad operativa, el potencial estratégico y la preparación para la implementación.",
+      },
+      {
+        title: "Propuesta y Estrategia",
+        description: "Elaboramos una propuesta de implementación a medida y un documento de estrategia operativa.",
+      },
+      {
+        title: "Contrato y Firma",
+        description: "Revise y firme digitalmente su acuerdo de implementación.",
+      },
+      {
+        title: "Factura y Pago",
+        description: "Facturación estructurada — 50% por adelantado, 50% al completar la Fase 1.",
+      },
+      {
+        title: "Inicio y Implementación",
+        description: "Comienza la activación operativa. Su entorno A.D.A.M. se configura y se programa el lanzamiento.",
+      },
+    ],
+    statusBadge: "A.D.A.M. está activo y procesando clientes",
+    stepLabel: "Paso",
+  },
+
+  pricing: {
+    heading: "Planes para",
+    headingItalic: "cada etapa",
+    subtitle: "Asesoramiento estructurado y desarrollo empresarial — combinando estrategia, experiencia en el sector público e infraestructura tecnológica para ayudarle a escalar.",
+    eyebrow: "Precios transparentes",
+    tabB2G: "Sector Público B2G",
+    tabTech: "Tecnología / CTO",
+    commitment: "Desde 3 meses",
+    popular: "Popular",
+    from: "desde",
+    perMonth: "/ mes",
+    perHour: "/ hora",
+    getStarted: "Comenzar",
+    customQuote: "¿Necesita algo personalizado? Adaptamos paquetes a sus requisitos exactos.",
+    requestCustomQuote: "Solicitar presupuesto personalizado",
+    billingBasis: "Facturación mensual",
+    billingMinimum: "Compromiso inicial de 3\u201312 meses",
+    billingRenewal: "Transición a suscripción mensual continua tras la entrega",
+    billingCancellation: "Aviso de cancelación de 15 días",
+
+    b2gStarter: {
+      name: "GovStarter",
+      features: [
+        "Inteligencia de contratación: 5 oportunidades verificadas/mes",
+        "Revisión de elegibilidad y cumplimiento",
+        "Asesoramiento en arquitectura de licitaciones",
+        "Consulta estratégica mensual",
+      ],
+    },
+    b2gExpand: {
+      name: "GovExpand",
+      features: [
+        "Pipeline de sector público activo: 10 licitaciones verificadas",
+        "Revisión del flujo de trabajo de cumplimiento",
+        "Consulta de estrategia del sector público",
+        "Estructuración del pipeline de expansión gubernamental",
+      ],
+    },
+    b2gElite: {
+      name: "GovElite",
+      features: [
+        "Arquitectura de oferta completa y redacción de propuestas",
+        "Hoja de ruta de licitaciones y estrategia de contratación",
+        "Estructuración de consorcios e identificación de socios",
+        "Soporte de asesoramiento estratégico prioritario",
+      ],
+    },
+
+    techArchitecture: {
+      name: "Consultoría de Arquitectura de Sistemas",
+      features: [
+        "Diseño de arquitectura de sistemas empresariales",
+        "Planificación de infraestructura",
+        "Estrategia de arquitectura de automatización",
+      ],
+    },
+    techPlatforms: {
+      name: "Desarrollo de Plataformas Empresariales",
+      features: [
+        "Portales internos",
+        "Paneles operativos",
+        "Sistemas empresariales personalizados",
+      ],
+    },
+    techAutomation: {
+      name: "Automatización e Integraciones",
+      features: [
+        "Integraciones CRM / ERP",
+        "Automatización de API",
+        "Sistemas de automatización de flujo de trabajo",
+      ],
+    },
+    techAudit: {
+      name: "Auditoría de Sistemas Técnicos",
+      features: [
+        "Auditoría de infraestructura",
+        "Evaluación de escalabilidad",
+        "Revisión de línea base de seguridad",
+      ],
+    },
+    techCTO: {
+      name: "CTO-como-Servicio",
+      features: [
+        "Participación técnica",
+        "Supervisión de arquitectura",
+        "Selección de proveedores e infraestructura",
+        "Consultoría de estrategia de escalado",
+        "Contrato mínimo de 1 mes — plazas limitadas",
+      ],
+    },
+  },
+
+  cta: {
+    eyebrow: "Póngase en contacto",
+    heading: "Construyamos algo",
+    headingItalic: "juntos.",
+    subtitle: "Ya sea que necesite implementación operativa, arquitectura estratégica o un socio de transformación estructurada — estamos listos para revisar su solicitud.",
+    ctaPrimary: "Cuéntenos sobre usted",
+    ctaSecondary: "Solicitar evaluación operativa",
+    followLinkedIn: "Síguenos en LinkedIn",
+  },
+
+  contact: {
+    heading: "Envíenos un mensaje",
+    subtitle: "Complete el formulario a continuación y nos pondremos en contacto lo antes posible.",
+    labelName: "Nombre completo",
+    labelEmail: "Dirección de correo electrónico",
+    labelCompany: "Nombre de la empresa",
+    labelMessage: "Mensaje",
+    required: "*",
+    placeholderName: "Su nombre completo",
+    placeholderEmail: "su@email.com",
+    placeholderCompany: "El nombre de su empresa",
+    placeholderMessage: "Cuéntenos sobre sus objetivos comerciales y cómo podemos ayudarle...",
+    buttonSend: "Enviar mensaje",
+    privacyText: "Al enviar este formulario, acepta nuestros términos de servicio y política de privacidad.",
+    successHeading: "Mensaje preparado",
+    successText: "Su cliente de correo electrónico debería haberse abierto. Si no, envíenos un correo electrónico directamente a info@andykgroup.com",
+  },
+
+  footer: {
+    copyright: "© 2026",
+    linkHome: "Inicio",
+    linkSystems: "A.D.A.M. & E.V.E.",
+    linkPricing: "Precios",
+    linkContact: "Contacto",
+    linkPrivacy: "Política de privacidad",
+    linkCookies: "Política de cookies",
+    linkTerms: "Condiciones de uso",
+    linkDisclaimer: "Aviso legal del sitio",
+    linkLegalNotice: "Aviso legal",
+    linkClientPortal: "Portal del cliente",
+    selectLanguage: "Idioma",
+    selectCurrency: "Moneda",
+  },
+
+  common: {
+    getStarted: "Comenzar",
+    learnMore: "Más información",
+    contactUs: "Contáctenos",
+    readMore: "Leer más",
+  },
+
+  endToEndQualification: {
+    title: "Cómo colaboramos",
+    description: "Las Asociaciones de Implementación Estratégica se revisan internamente y se aprueban de manera selectiva — solo por solicitud. Implementación estructurada. Claridad operativa en cada compromiso.",
+    steps: [
+      "Enviar evaluación",
+      "Revisión interna",
+      "Evaluación de idoneidad estratégica",
+      "Llamada de calificación",
+      "Propuesta",
+    ],
+    ctaAssessment: "Solicitar implementación",
+    ctaReview: "Solicitar evaluación operativa",
+  },
+
+  lovedBy: {
+    headingBold: "Construido sobre",
+    headingItalic: "estructura.",
+    headingLine2: "Construido para eliminar el caos.",
+    paragraph1: "Andy'K Group International LTD es una empresa de arquitectura de implementación operativa con sede en el Reino Unido — eliminando el caos operativo y entregando transformación estructurada en entornos B2G, arquitectura empresarial integral y tecnológicos.",
+    paragraph2: "Eliminamos el caos operativo en incorporación, implementación y gestión del ciclo de vida.",
+    paragraph3: "A.D.A.M. estructura las operaciones. E.V.E. gestiona la ejecución, los hitos y el seguimiento de entregas. Los humanos toman decisiones estratégicas.",
+    quote: "Una estructura. Un flujo. Un sistema.",
+    tagline: "CONSTRUIDO PARA LA CLARIDAD OPERATIVA.",
+  },
+
+  caseStudies: {
+    heading: "Casos de",
+    headingItalic: "estudio",
+    cards: [
+      { shortTitle: "Sistema Operativo Hotelero", title: "Cómo resolvimos la fragmentación operativa hotelera con nuestros servicios", description: "Construimos un sistema operativo digital completo para un grupo hotelero — de la estrategia a la ejecución.", link: "Más información" },
+      { shortTitle: "Digitalización Sanitaria", title: "Cómo resolvimos el caos clínico con nuestros servicios", description: "Diseñamos un sistema de operaciones estructurado para una clínica de fisioterapia, integrando A.D.A.M. Healthcare.", link: "Más información" },
+      { shortTitle: "Profesionalización de Consultoría", title: "Cómo resolvimos la inconsistencia en consultoría con nuestros servicios", description: "Transformamos una práctica de consultoría emocional en un servicio profesional estructurado y escalable.", link: "Más información" },
+    ],
+  },
+
+  nav: {
+    about: "Acerca de",
+    caseStudies: "Casos de estudio",
+    pricing: "Precios",
+    contact: "Contacto",
+    services: "Servicios",
+    groupSystems: "Sistemas",
+    groupBusiness: "Servicios empresariales",
+    groupIT: "Servicios TI",
+    adamDesc: "Gestor Automatizado de Documentos y Cuentas",
+    endToEnd: "End-to-End",
+    endToEndDesc: "Desarrollo empresarial estratégico y arquitectura de crecimiento",
+    b2gPublic: "Sector Público B2G",
+    b2gPublicDesc: "Licitaciones gubernamentales y contratación pública",
+    sysArch: "Arquitectura de sistemas",
+    sysArchDesc: "Diseño y planificación de sistemas empresariales",
+    platformDev: "Desarrollo de plataformas",
+    platformDevDesc: "Portales, paneles y sistemas personalizados",
+    automation: "Automatización e integraciones",
+    automationDesc: "Automatización de CRM, ERP y flujos de trabajo",
+    cto: "CTO-as-a-Service",
+    ctoDesc: "Liderazgo técnico bajo demanda",
+  },
+
+  founders: {
+    eyebrow: "Las personas detrás",
+    heading: "Conozca a los",
+    headingItalic: "fundadores",
+    connect: "Conectar",
+    roles: [
+      "Fundador y Arquitecto Operativo",
+      "Cofundador y CTO",
+    ],
+    bios: [
+      "Más de quince años de liderazgo en estrategia operativa, desarrollo empresarial y arquitectura de implementación. Andrej se especializa en eliminar el caos operativo — construyendo sistemas de implementación estructurados para B2G, implementación operativa y compromisos internacionales con clientes.",
+      "El arquitecto técnico detrás de A.D.A.M., Kobe construye la infraestructura operativa que hace realidad la estrategia de implementación prioritaria.",
+    ],
+    quotes: [
+      "Mi enfoque es construir sistemas de implementación que no solo se vean bien en papel — eliminan el caos, crean claridad operativa y escalan con estructura.",
+      "",
+    ],
+    locations: [
+      "Nacido en Austria",
+      "Nacido en Bélgica",
+    ],
+  },
+
+  caseStudyPages: {
+    nextCaseStudy: "Siguiente caso de estudio",
+    problem: "Problema",
+    solution: "Solución",
+    outcome: "Resultado",
+    hospitality: {
+      title: "Sistema operativo hotelero",
+      problem: "Un grupo hotelero en crecimiento con múltiples propiedades funcionaba con herramientas desconectadas, procesos manuales y experiencias de huéspedes inconsistentes. La gestión de ingresos, la coordinación del personal y la comunicación con los huéspedes estaban fragmentadas entre hojas de cálculo y soluciones improvisadas.",
+      solution: "Diseñamos e implementamos un sistema operativo digital completo — integrando la gestión de reservas, la programación del personal, la comunicación con los huéspedes y la supervisión financiera en una plataforma estructurada. La estrategia cubrió el rediseño operativo, la selección de tecnología y la incorporación del equipo.",
+      outcome: "Operaciones unificadas en todas las propiedades. La eficiencia del personal mejoró, las puntuaciones de satisfacción de los huéspedes aumentaron y el grupo obtuvo una visibilidad clara de las métricas de rendimiento — todo funcionando a través de un solo sistema.",
+    },
+    healthcare: {
+      title: "Digitalización sanitaria",
+      problem: "Una clínica de fisioterapia luchaba contra el caos en los flujos de trabajo clínicos — la programación de pacientes, los registros de tratamiento, la facturación y la comunicación se manejaban a través de sistemas separados y desconectados. El personal dedicaba más tiempo a la administración que a la atención al paciente.",
+      solution: "Diseñamos un sistema de operaciones estructurado para la clínica, integrando la gestión de pacientes, la programación de citas, la documentación de tratamientos y la facturación en un flujo de trabajo digital cohesivo — con A.D.A.M. Healthcare manejando la capa de gestión de documentos y cuentas.",
+      outcome: "El tiempo administrativo se redujo significativamente. El rendimiento de pacientes mejoró. La clínica ahora opera con un flujo de trabajo digital claro y estructurado que mantiene al personal clínico enfocado en la atención, no en el papeleo.",
+    },
+    consulting: {
+      title: "Profesionalización de consultoría",
+      problem: "Una práctica de consultoría entregaba valor pero de manera inconsistente — las propuestas eran improvisadas, la gestión de proyectos era reactiva y la comunicación con los clientes dependía enteramente de las relaciones personales del fundador. El negocio no podía escalar sin un cambio estructural.",
+      solution: "Transformamos la práctica de consultoría de una operación impulsada por emociones a un servicio profesional estructurado. Esto incluyó plantillas de propuestas estandarizadas, flujos de trabajo de gestión de proyectos, procesos de incorporación de clientes y un marco claro de entrega de servicios.",
+      outcome: "La práctica ahora entrega un servicio profesional consistente independientemente de qué miembro del equipo lidere. La retención de clientes mejoró, las tasas de referencia aumentaron y el negocio está posicionado para un crecimiento escalable.",
+    },
+  },
+
+  languages: {
+    en: "English",
+    es: "Español",
+    sk: "Slovenčina",
+    nl: "Nederlands",
+    pt: "Português",
+    de: "Deutsch",
+  },
+};
+
+// Slovak translations
+const sk: typeof en = {
+  company: {
+    name: "Andy'K Group International LTD",
+    tagline: "Komplexná Obchodná Architektúra a Operatívna Implementácia",
+    subtitle: "Architektúra Operatívnej Implementácie · Obchodné Prevádzkové Systémy",
+    subtitleLine2: "A.D.A.M. štruktúruje operácie. Ľudia prijímajú strategické rozhodnutia.",
+    description: "Andy'K Group International LTD je spoločnosť architektúry operatívnej implementácie so sídlom vo Veľkej Británii — eliminujúca prevádzkový chaos v onboardingu, implementácii a riadení životného cyklu.",
+    descriptionExtra: "S klientmi po celej Európe a Latinskej Amerike budujeme štruktúrované implementačné prostredia, kde stratégia, prevádzka a technológia smerujú jedným smerom.",
+    descriptionSystems: "Služby operatívnej implementácie kombinujúce štruktúrované dodávky, obchodnú architektúru a technológiu — pomáhajúce spoločnostiam dosiahnuť prevádzkovú jasnosť v škálovaní.",
+    quote: "Jedna štruktúra. Jeden tok. Jeden systém.",
+    quoteSubtitle: "Vytvorené pre prevádzkovú jasnosť.",
+    location: "Londýn, Veľká Británia",
+    ukCompany: "Spoločnosť s ručením obmedzeným Veľkej Británie",
+  },
+
+  hero: {
+    ctaPrimary: "Povedzte nám o sebe",
+    ctaSecondary: "Zistite, ako pracujeme",
+    emailPlaceholder: "Vaša e-mailová adresa",
+    getInContact: "Kontaktujte nás",
+  },
+
+  banner: {
+    opLead: "Prevádzková architektúra:",
+    opText: "štruktúrovaný implementačný životný cyklus a prevádzková jasnosť",
+    adamSystem: "Systém A.D.A.M.:",
+    adamText: "platforma operatívnej implementácie — štruktúrované dodávky a životný cyklus klienta",
+    b2gTender: "Stratégia B2G:",
+    b2gText: "výzveda obstarávania a expanzia verejného sektora",
+    trusted: "Dôveryhodné naprieč:",
+    trustedText: "LATAM, Benelux, DACH a USA",
+  },
+
+  services: {
+    heading: "Naše",
+    headingItalic: "služby",
+    subtitle: "Služby operatívnej implementácie — kombinujúce štruktúrované dodávky, obchodnú architektúru a technológiu.",
+    items: [
+      { title: "End-to-End", description: "Strategické implementačné partnerstvo — angažmán operatívnej transformácie, selektívne na základe žiadosti" },
+      { title: "B2G", description: "Stratégia verejného sektora, poradenstvo k tenderom a obstarávanie" },
+      { title: "IT Services", description: "Architektúra systémov, vývoj platforiem a automatizácia" },
+    ],
+  },
+
+  endToEnd: {
+    heading: "Strategické",
+    headingItalic: "Implementačné Partnerstvo",
+    description: "Eliminujeme prevádzkový chaos v onboardingu, implementácii a riadení životného cyklu. Selektívny angažmán — štruktúrovaný rollout, implementácia na prvom mieste. A.D.A.M. štruktúruje operácie. Ľudia prijímajú strategické rozhodnutia.",
+    bullets: [
+      { title: "Prevádzková jasnosť", description: "Eliminovanie chaosu na každej obchodnej vrstve — definovanie štruktúry, zodpovednosti a toku realizácie." },
+      { title: "Architektúra príjmov", description: "Navrhovanie cenových, monetizačných a príjmových systémov pre udržateľný rast." },
+      { title: "Pozicionovanie na trhu", description: "Zdokonaľovanie značky, hodnotovej ponuky a konkurenčnej výhody na cieľovom trhu." },
+      { title: "Redizajn implementácie", description: "Štruktúrovaný implementačný životný cyklus — od onboardingu po sledovanie dodávok a priebežnú optimalizáciu." },
+      { title: "Systémová integrácia", description: "Prepojenie nástrojov, platforiem a dátových tokov do jedného prevádzkového ekosystému." },
+      { title: "Kontrola štruktúrovaného životného cyklu", description: "Budovanie škálovateľných implementačných rámcov s dlhodobou prevádzkovou jasnosťou a kontrolovanou realizáciou." },
+    ],
+  },
+
+  endToEndQualification: {
+    title: "Ako spolupracujeme",
+    description: "Strategické implementačné partnerstvá sú interne preverované a selektívne schvaľované — iba na základe žiadosti. Štruktúrovaný rollout. Prevádzková jasnosť pri každom angažmáne.",
+    steps: [
+      "Odoslať hodnotenie",
+      "Interná kontrola",
+      "Hodnotenie strategickej vhodnosti",
+      "Kvalifikačný hovor",
+      "Návrh",
+    ],
+    ctaAssessment: "Požiadať o implementáciu",
+    ctaReview: "Požiadať o prevádzkové hodnotenie",
+  },
+
+  lovedBy: {
+    headingBold: "Postavené na",
+    headingItalic: "štruktúre.",
+    headingLine2: "Vytvorené na elimináciu chaosu.",
+    paragraph1: "Andy'K Group International LTD je spoločnosť architektúry operatívnej implementácie so sídlom vo Veľkej Británii — eliminujúca prevádzkový chaos a poskytujúca štruktúrovanú transformáciu v prostrediach B2G, komplexnej podnikovej architektúry a technologicky orientovaných odvetviach.",
+    paragraph2: "Eliminujeme prevádzkový chaos v onboardingu, implementácii a riadení životného cyklu.",
+    paragraph3: "A.D.A.M. štruktúruje operácie. E.V.E. riadi realizáciu, míľniky a sledovanie dodávok. Ľudia prijímajú strategické rozhodnutia.",
+    quote: "Jedna štruktúra. Jeden tok. Jeden systém.",
+    tagline: "VYTVORENÉ PRE PREVÁDZKOVÚ JASNOSŤ.",
+  },
+
+  caseStudies: {
+    heading: "Prípadové",
+    headingItalic: "štúdie",
+    cards: [
+      { shortTitle: "Hotelový operačný systém", title: "Ako sme vyriešili fragmentované hotelové operácie pomocou našich služieb", description: "Vybudovali sme kompletný digitálny operačný systém pre hoteliersku skupinu — od stratégie po realizáciu.", link: "Dozvedieť sa viac" },
+      { shortTitle: "Digitalizácia zdravotníctva", title: "Ako sme vyriešili chaos v klinických procesoch pomocou našich služieb", description: "Navrhli sme štruktúrovaný operačný systém pre fyzioterapeutickú kliniku s integráciou A.D.A.M. Healthcare.", link: "Dozvedieť sa viac" },
+      { shortTitle: "Profesionalizácia poradenstva", title: "Ako sme vyriešili nekonzistentné poradenstvo pomocou našich služieb", description: "Transformovali sme emocionálnu poradenskú prax na štruktúrovanú, škálovateľnú profesionálnu službu.", link: "Dozvedieť sa viac" },
+    ],
+  },
+
+  roadmap: {
+    heading: "Ako funguje",
+    headingItalic: "A.D.A.M.",
+    subtitle: "Od prvého kontaktu po spustenie projektu v šiestich štruktúrovaných krokoch.",
+    steps: [
+      {
+        title: "Strategická prihláška",
+        description: "Odošlite svoju prihlášku na implementáciu. Všetky žiadosti posudzujeme manuálne podľa strategickej vhodnosti.",
+      },
+      {
+        title: "Interné hodnotenie a kvalifikácia",
+        description: "Náš tím hodnotí prevádzkový súlad, strategický potenciál a pripravenosť na implementáciu.",
+      },
+      {
+        title: "Návrh a stratégia",
+        description: "Vypracujeme implementačný návrh na mieru a dokument operatívnej stratégie.",
+      },
+      {
+        title: "Zmluva a podpis",
+        description: "Skontrolujte a digitálne podpíšte svoju implementačnú zmluvu.",
+      },
+      {
+        title: "Faktúra a platba",
+        description: "Štruktúrovaná fakturácia — 50% vopred, 50% po dokončení 1. fázy.",
+      },
+      {
+        title: "Spustenie a implementácia",
+        description: "Začína prevádzková aktivácia. Vaše prostredie A.D.A.M. je nakonfigurované a naplánované spustenie.",
+      },
+    ],
+    statusBadge: "A.D.A.M. je aktívny a spracováva klientov",
+    stepLabel: "Krok",
+  },
+
+  pricing: {
+    heading: "Plány pre",
+    headingItalic: "každú fázu",
+    subtitle: "Štruktúrované poradenstvo a obchodný rozvoj — kombinujúce stratégiu, odbornosť vo verejnom sektore a technologickú infraštruktúru, aby ste mohli škálovať.",
+    eyebrow: "Transparentné ceny",
+    tabB2G: "B2G verejný sektor",
+    tabTech: "Technológia / CTO",
+    commitment: "Od 3 mesiacov",
+    popular: "Populárne",
+    from: "od",
+    perMonth: "/ mesiac",
+    perHour: "/ hodina",
+    getStarted: "Začať",
+    customQuote: "Potrebujete niečo na mieru? Prispôsobujeme balíčky presne vašim požiadavkám.",
+    requestCustomQuote: "Požiadať o cenovú ponuku na mieru",
+    billingBasis: "Mesačná fakturácia",
+    billingMinimum: "Počiatočný záväzok 3\u201312 mesiacov",
+    billingRenewal: "Po dodaní prechod na priebežné mesačné predplatné",
+    billingCancellation: "15-dňová výpovedná lehota",
+
+    b2gStarter: {
+      name: "GovStarter",
+      features: [
+        "Výzveda obstarávania: 5 overených príležitostí/mesiac",
+        "Kontrola oprávnenosti a súladu",
+        "Poradenstvo k architektúre tenderov",
+        "Mesačná strategická konzultácia",
+      ],
+    },
+    b2gExpand: {
+      name: "GovExpand",
+      features: [
+        "Aktívny pipeline verejného sektora: 10 overených tenderov",
+        "Kontrola pracovného toku súladu",
+        "Konzultácia stratégie verejného sektora",
+        "Štruktúrovanie pipeline vládnej expanzie",
+      ],
+    },
+    b2gElite: {
+      name: "GovElite",
+      features: [
+        "Kompletná architektúra ponuky a tvorba návrhov",
+        "Cestovná mapa tenderov a stratégia obstarávania",
+        "Štruktúrovanie konzorcií a identifikácia partnerov",
+        "Prioritná strategická poradenská podpora",
+      ],
+    },
+
+    techArchitecture: {
+      name: "Poradenstvo architektúry systémov",
+      features: [
+        "Dizajn architektúry obchodných systémov",
+        "Plánovanie infraštruktúry",
+        "Stratégia architektúry automatizácie",
+      ],
+    },
+    techPlatforms: {
+      name: "Vývoj obchodných platforiem",
+      features: [
+        "Interné portály",
+        "Prevádzkové dashboardy",
+        "Vlastné firemné systémy",
+      ],
+    },
+    techAutomation: {
+      name: "Automatizácia a integrácie",
+      features: [
+        "CRM / ERP integrácie",
+        "API automatizácia",
+        "Systémy automatizácie pracovných postupov",
+      ],
+    },
+    techAudit: {
+      name: "Audit technických systémov",
+      features: [
+        "Audit infraštruktúry",
+        "Posúdenie škálovateľnosti",
+        "Kontrola základnej bezpečnosti",
+      ],
+    },
+    techCTO: {
+      name: "CTO-ako-služba",
+      features: [
+        "Technické zapojenie",
+        "Dohľad nad architektúrou",
+        "Výber dodávateľov a infraštruktúry",
+        "Poradenstvo stratégie škálovania",
+        "Minimálna zmluva na 1 mesiac — obmedzené miesta",
+      ],
+    },
+  },
+
+  cta: {
+    eyebrow: "Kontaktujte nás",
+    heading: "Postavme niečo",
+    headingItalic: "spoločne.",
+    subtitle: "Či už potrebujete operatívnu implementáciu, strategickú architektúru alebo partnera pre štruktúrovanú transformáciu — sme pripravení preskúmať vašu žiadosť.",
+    ctaPrimary: "Povedzte nám o sebe",
+    ctaSecondary: "Požiadať o prevádzkové hodnotenie",
+    followLinkedIn: "Sledujte nás na LinkedIn",
+  },
+
+  contact: {
+    heading: "Pošlite nám správu",
+    subtitle: "Vyplňte formulár nižšie a ozveme sa vám čo najskôr.",
+    labelName: "Celé meno",
+    labelEmail: "E-mailová adresa",
+    labelCompany: "Názov spoločnosti",
+    labelMessage: "Správa",
+    required: "*",
+    placeholderName: "Vaše celé meno",
+    placeholderEmail: "vas@email.com",
+    placeholderCompany: "Názov vašej spoločnosti",
+    placeholderMessage: "Povedzte nám o vašich obchodných cieľoch a ako vám môžeme pomôcť...",
+    buttonSend: "Odoslať správu",
+    privacyText: "Odoslaním tohto formulára súhlasíte s našimi podmienkami služby a zásadami ochrany osobných údajov.",
+    successHeading: "Správa pripravená",
+    successText: "Váš e-mailový klient by sa mal otvoriť. Ak nie, napíšte nám priamo na info@andykgroup.com",
+  },
+
+  footer: {
+    copyright: "© 2026",
+    linkHome: "Domov",
+    linkSystems: "A.D.A.M. & E.V.E.",
+    linkPricing: "Ceny",
+    linkContact: "Kontakt",
+    linkPrivacy: "Zásady ochrany osobných údajov",
+    linkCookies: "Zásady používania cookies",
+    linkTerms: "Podmienky používania",
+    linkDisclaimer: "Vyhlásenie o odmietnutí zodpovednosti",
+    linkLegalNotice: "Právne upozornenie",
+    linkClientPortal: "Klientsky portál",
+    selectLanguage: "Jazyk",
+    selectCurrency: "Mena",
+  },
+
+  common: {
+    getStarted: "Začať",
+    learnMore: "Dozvedieť sa viac",
+    contactUs: "Kontaktujte nás",
+    readMore: "Čítať viac",
+  },
+
+  nav: {
+    about: "O nás",
+    caseStudies: "Prípadové štúdie",
+    pricing: "Ceny",
+    contact: "Kontakt",
+    services: "Služby",
+    groupSystems: "Systémy",
+    groupBusiness: "Obchodné služby",
+    groupIT: "IT služby",
+    adamDesc: "Automatizovaný správca dokumentov a účtov",
+    endToEnd: "End-to-End",
+    endToEndDesc: "Strategický rozvoj podnikania a architektúra rastu",
+    b2gPublic: "B2G Verejný sektor",
+    b2gPublicDesc: "Verejné súťaže a obstarávanie",
+    sysArch: "Architektúra systémov",
+    sysArchDesc: "Návrh a plánovanie podnikových systémov",
+    platformDev: "Vývoj platforiem",
+    platformDevDesc: "Portály, dashboardy a vlastné systémy",
+    automation: "Automatizácia a integrácie",
+    automationDesc: "Automatizácia CRM, ERP a pracovných procesov",
+    cto: "CTO-as-a-Service",
+    ctoDesc: "Technické vedenie na požiadanie",
+  },
+
+  founders: {
+    eyebrow: "Ľudia za tým",
+    heading: "Spoznajte",
+    headingItalic: "zakladateľov",
+    connect: "Spojiť sa",
+    roles: [
+      "Zakladateľ a Prevádzkový Architekt",
+      "Spoluzakladateľ a CTO",
+    ],
+    bios: [
+      "Viac ako pätnásť rokov vedenia v operatívnej stratégii, rozvoji podnikania a architektúre implementácie. Andrej sa špecializuje na elimináciu prevádzkového chaosu — budovanie štruktúrovaných implementačných systémov pre B2G, operatívnu implementáciu a medzinárodné angažmány s klientmi.",
+      "Technický architekt za A.D.A.M., Kobe buduje prevádzkovú infraštruktúru, ktorá robí stratégiu implementácie na prvom mieste realitou.",
+    ],
+    quotes: [
+      "Môj cieľ je budovať implementačné systémy, ktoré nielen vyzerajú dobre na papieri — eliminujú chaos, vytvárajú prevádzkovú jasnosť a škálujú so štruktúrou.",
+      "",
+    ],
+    locations: [
+      "Narodený v Rakúsku",
+      "Narodený v Belgicku",
+    ],
+  },
+
+  caseStudyPages: {
+    nextCaseStudy: "Ďalšia prípadová štúdia",
+    problem: "Problém",
+    solution: "Riešenie",
+    outcome: "Výsledok",
+    hospitality: {
+      title: "Hotelový operačný systém",
+      problem: "Rastúca hotelová skupina s viacerými nehnuteľnosťami fungovala na odpojených nástrojoch, manuálnych procesoch a nekonzistentných zážitkoch hostí. Riadenie príjmov, koordinácia personálu a komunikácia s hosťami boli fragmentované medzi tabuľkami a improvizovanými riešeniami.",
+      solution: "Navrhli a implementovali sme kompletný digitálny operačný systém — integráciou správy rezervácií, plánovania personálu, komunikácie s hosťami a finančného dohľadu do jednej štruktúrovanej platformy. Stratégia pokrývala operačný redizajn, výber technológií a onboarding tímu.",
+      outcome: "Zjednotené operácie naprieč všetkými nehnuteľnosťami. Efektivita personálu sa zlepšila, skóre spokojnosti hostí vzrástlo a skupina získala jasnú viditeľnosť do výkonnostných metrík — všetko bežiace cez jeden systém.",
+    },
+    healthcare: {
+      title: "Digitalizácia zdravotníctva",
+      problem: "Fyzioterapeutická klinika zápasila s chaosom v klinických pracovných procesoch — plánovanie pacientov, záznamy o liečbe, fakturácia a komunikácia boli riadené cez oddelené, neprepojené systémy. Personál trávil viac času administratívou než starostlivosťou o pacientov.",
+      solution: "Navrhli sme štruktúrovaný operačný systém pre kliniku, integrujúci správu pacientov, plánovanie termínov, dokumentáciu liečby a fakturáciu do súdržného digitálneho pracovného procesu — s A.D.A.M. Healthcare riadiacim vrstvu správy dokumentov a účtov.",
+      outcome: "Administratívny čas sa výrazne znížil. Priepustnosť pacientov sa zlepšila. Klinika teraz funguje s jasným, štruktúrovaným digitálnym pracovným procesom, ktorý udržuje klinický personál zameraný na starostlivosť, nie na papierovanie.",
+    },
+    consulting: {
+      title: "Profesionalizácia poradenstva",
+      problem: "Poradenská prax dodávala hodnotu, ale nekonzistentne — návrhy boli improvizované, riadenie projektov bolo reaktívne a komunikácia s klientmi závisela výlučne od osobných vzťahov zakladateľa. Firma nemohla rásť bez štrukturálnej zmeny.",
+      solution: "Transformovali sme poradenskú prax z emocionálne riadenej prevádzky na štruktúrovanú profesionálnu službu. To zahŕňalo štandardizované šablóny návrhov, pracovné procesy riadenia projektov, procesy onboardingu klientov a jasný rámec poskytovania služieb.",
+      outcome: "Prax teraz dodáva konzistentný profesionálny servis bez ohľadu na to, ktorý člen tímu vedie. Retencia klientov sa zlepšila, miera odporúčaní vzrástla a firma je pozicionovaná pre škálovateľný rast.",
+    },
+  },
+
+  languages: {
+    en: "English",
+    es: "Español",
+    sk: "Slovenčina",
+    nl: "Nederlands",
+    pt: "Português",
+    de: "Deutsch",
+  },
+};
+
+// Dutch translations
+const nl: typeof en = {
+  company: {
+    name: "Andy'K Group International LTD",
+    tagline: "End-to-End Bedrijfsarchitectuur & Operationele Implementatie",
+    subtitle: "Operationele Implementatiearchitectuur · Bedrijfsbesturingssystemen",
+    subtitleLine2: "A.D.A.M. structureert operaties. Mensen nemen strategische beslissingen.",
+    description: "Andy'K Group International LTD is een in het VK gevestigd bedrijf voor operationele implementatiearchitectuur — dat operationele chaos elimineert in onboarding, implementatie en lifecycle management.",
+    descriptionExtra: "Met klanten in heel Europa en Latijns-Amerika bouwen we gestructureerde implementatieomgevingen waar strategie, operaties en technologie in één richting bewegen.",
+    descriptionSystems: "Operationele implementatiediensten die gestructureerde levering, bedrijfsarchitectuur en technologie combineren — bedrijven helpen operationele helderheid op schaal te bereiken.",
+    quote: "Eén structuur. Eén stroom. Eén systeem.",
+    quoteSubtitle: "Gebouwd voor operationele helderheid.",
+    location: "Londen, VK",
+    ukCompany: "VK Limited Company",
+  },
+
+  hero: {
+    ctaPrimary: "Vertel ons over uzelf",
+    ctaSecondary: "Ontdek hoe wij werken",
+    emailPlaceholder: "Uw e-mailadres",
+    getInContact: "Neem contact op",
+  },
+
+  banner: {
+    opLead: "Operationele architectuur:",
+    opText: "gestructureerde implementatielifecycle & operationele helderheid",
+    adamSystem: "A.D.A.M. Systeem:",
+    adamText: "operationeel implementatieplatform — gestructureerde levering & klantlevenscyclus",
+    b2gTender: "B2G Strategie:",
+    b2gText: "inkoop-intelligentie & uitbreiding publieke sector",
+    trusted: "Vertrouwd in:",
+    trustedText: "LATAM, Benelux, DACH en VS",
+  },
+
+  services: {
+    heading: "Onze",
+    headingItalic: "diensten",
+    subtitle: "Operationele implementatiediensten — gestructureerde levering, bedrijfsarchitectuur en technologie.",
+    items: [
+      { title: "End-to-End", description: "Strategisch implementatiepartnerschap — operationele transformatie-engagement, selectief op aanvraag" },
+      { title: "B2G", description: "Publieke sectorstrategie, aanbestedingsadvies en inkoop" },
+      { title: "IT Services", description: "Systeemarchitectuur, platformontwikkeling en automatisering" },
+    ],
+  },
+
+  endToEnd: {
+    heading: "Strategisch",
+    headingItalic: "Implementatiepartnerschap",
+    description: "Wij elimineren operationele chaos in onboarding, implementatie en lifecycle management. Een selectieve samenwerking — gestructureerde uitrol, implementatie eerst. A.D.A.M. structureert operaties. Mensen nemen strategische beslissingen.",
+    bullets: [
+      { title: "Operationele helderheid", description: "Chaos elimineren in elke bedrijfslaag — structuur, verantwoordelijkheid en uitvoeringsstroom definiëren." },
+      { title: "Omzetarchitectuur", description: "Prijsstelling, monetisatie en omzetstroomsystemen ontwerpen voor duurzame groei." },
+      { title: "Marktpositionering", description: "Merk, waardepropositie en concurrentievoordeel verfijnen in uw doelmarkt." },
+      { title: "Implementatie herontwerp", description: "Gestructureerde implementatielifecycle — van onboarding tot leveringsregistratie en doorlopende optimalisatie." },
+      { title: "Systeemintegratie", description: "Tools, platforms en datastromen verbinden tot één uniform operationeel ecosysteem." },
+      { title: "Gestructureerde lifecycle controle", description: "Schaalbare implementatiekaders bouwen met langetermijn operationele helderheid en gecontroleerde uitvoering." },
+    ],
+  },
+
+  endToEndQualification: {
+    title: "Hoe wij samenwerken",
+    description: "Strategische Implementatiepartnerschappen worden intern beoordeeld en selectief goedgekeurd — alleen op aanvraag. Gestructureerde uitrol. Operationele helderheid in elke samenwerking.",
+    steps: [
+      "Beoordeling indienen",
+      "Interne review",
+      "Strategische geschiktheidsevaluatie",
+      "Kwalificatiegesprek",
+      "Voorstel",
+    ],
+    ctaAssessment: "Aanvragen voor implementatie",
+    ctaReview: "Operationele beoordeling aanvragen",
+  },
+
+  lovedBy: {
+    headingBold: "Gebouwd op",
+    headingItalic: "structuur.",
+    headingLine2: "Gebouwd om chaos te elimineren.",
+    paragraph1: "Andy'K Group International LTD is een in het VK gevestigd bedrijf voor operationele implementatiearchitectuur — dat operationele chaos elimineert en gestructureerde transformatie levert in B2G, end-to-end bedrijfsarchitectuur en technologiegedreven omgevingen.",
+    paragraph2: "Wij elimineren operationele chaos in onboarding, implementatie en lifecycle management.",
+    paragraph3: "A.D.A.M. structureert operaties. E.V.E. beheert uitvoering, mijlpalen en leveringsregistratie. Mensen nemen strategische beslissingen.",
+    quote: "Eén structuur. Eén stroom. Eén systeem.",
+    tagline: "GEBOUWD VOOR OPERATIONELE HELDERHEID.",
+  },
+
+  caseStudies: {
+    heading: "Case",
+    headingItalic: "studies",
+    cards: [
+      { shortTitle: "Hotel besturingssysteem", title: "Hoe wij gefragmenteerde hoteloperaties oplosten met onze diensten", description: "Een volledig digitaal besturingssysteem gebouwd voor een hotelgroep — van strategie tot uitvoering.", link: "Meer informatie" },
+      { shortTitle: "Digitalisering gezondheidszorg", title: "Hoe wij klinische werkstroomchaos oplosten met onze diensten", description: "Een gestructureerd operatiesysteem ontworpen voor een fysiotherapiekliniek, met A.D.A.M. Healthcare-integratie.", link: "Meer informatie" },
+      { shortTitle: "Professionalisering consultancy", title: "Hoe wij inconsistente adviesverlening oplosten met onze diensten", description: "Een emotionele adviespraktijk getransformeerd tot een gestructureerde, schaalbare professionele dienst.", link: "Meer informatie" },
+    ],
+  },
+
+  roadmap: {
+    heading: "Hoe A.D.A.M.",
+    headingItalic: "werkt",
+    subtitle: "Van eerste contact tot projectlancering in zes gestructureerde stappen.",
+    steps: [
+      {
+        title: "Strategische Aanvraag",
+        description: "Dien uw implementatieaanvraag in. We beoordelen alle aanvragen handmatig op strategische geschiktheid.",
+      },
+      {
+        title: "Interne Beoordeling & Kwalificatie",
+        description: "Ons team beoordeelt operationele geschiktheid, strategisch potentieel en implementatiegereedheid.",
+      },
+      {
+        title: "Voorstel & Strategie",
+        description: "We stellen een op maat gemaakt implementatievoorstel en operationeel strategiedocument op.",
+      },
+      {
+        title: "Contract & Ondertekening",
+        description: "Bekijk en onderteken uw implementatieovereenkomst digitaal.",
+      },
+      {
+        title: "Factuur & Betaling",
+        description: "Gestructureerde facturering — 50% vooraf, 50% bij voltooiing van Fase 1.",
+      },
+      {
+        title: "Kickoff & Implementatie",
+        description: "Operationele activering begint. Uw A.D.A.M.-omgeving wordt geconfigureerd en de go-live wordt gepland.",
+      },
+    ],
+    statusBadge: "A.D.A.M. is actief en verwerkt klanten",
+    stepLabel: "Stap",
+  },
+
+  pricing: {
+    heading: "Plannen voor",
+    headingItalic: "elke fase",
+    subtitle: "Gestructureerd advies en bedrijfsontwikkeling — een combinatie van strategie, expertise in de publieke sector en technologische infrastructuur om u te helpen schalen.",
+    eyebrow: "Transparante prijzen",
+    tabB2G: "B2G publieke sector",
+    tabTech: "Technologie / CTO",
+    commitment: "Vanaf 3 maanden",
+    popular: "Populair",
+    from: "vanaf",
+    perMonth: "/ maand",
+    perHour: "/ uur",
+    getStarted: "Begin",
+    customQuote: "Heeft u iets op maat nodig? We passen pakketten aan uw exacte vereisten aan.",
+    requestCustomQuote: "Vraag een offerte op maat aan",
+    billingBasis: "Maandelijks gefactureerd",
+    billingMinimum: "Initiële verbintenis van 3\u201312 maanden",
+    billingRenewal: "Gaat over naar doorlopend maandabonnement na oplevering",
+    billingCancellation: "15 dagen opzegtermijn",
+
+    b2gStarter: {
+      name: "GovStarter",
+      features: [
+        "Inkoop-intelligentie: 5 geverifieerde kansen/maand",
+        "Geschiktheids- & nalevingsreview",
+        "Aanbestedingsarchitectuur advies",
+        "Maandelijkse strategische consultatie",
+      ],
+    },
+    b2gExpand: {
+      name: "GovExpand",
+      features: [
+        "Actieve publieke sector pipeline: 10 geverifieerde aanbestedingen",
+        "Compliance workflow review",
+        "Publieke sector strategie consultatie",
+        "Structurering van de overheidsuitbreidingspipeline",
+      ],
+    },
+    b2gElite: {
+      name: "GovElite",
+      features: [
+        "Volledige biedarchitectuur & voorstelschrijven",
+        "Aanbestedingsroadmap & inkoopstrategie",
+        "Consortiumstructurering & partneridentificatie",
+        "Prioritaire strategische adviesondersteuning",
+      ],
+    },
+
+    techArchitecture: {
+      name: "Systeemarchitectuur consultancy",
+      features: [
+        "Bedrijfssysteemarchitectuur ontwerp",
+        "Infrastructuurplanning",
+        "Automatiseringsarchitectuur strategie",
+      ],
+    },
+    techPlatforms: {
+      name: "Bedrijfsplatform ontwikkeling",
+      features: [
+        "Interne portalen",
+        "Operationele dashboards",
+        "Aangepaste bedrijfssystemen",
+      ],
+    },
+    techAutomation: {
+      name: "Automatisering & integraties",
+      features: [
+        "CRM / ERP integraties",
+        "API automatisering",
+        "Workflow automatiseringssystemen",
+      ],
+    },
+    techAudit: {
+      name: "Technische systeemaudit",
+      features: [
+        "Infrastructuur audit",
+        "Schaalbaarheids beoordeling",
+        "Beveiligingsbasislijn beoordeling",
+      ],
+    },
+    techCTO: {
+      name: "CTO-als-dienst",
+      features: [
+        "Technische betrokkenheid",
+        "Architectuur supervisie",
+        "Leveranciers- en infrastructuurselectie",
+        "Schaalstrategie consultancy",
+        "Minimaal 1-maands contract — beperkte plekken",
+      ],
+    },
+  },
+
+  cta: {
+    eyebrow: "Neem contact op",
+    heading: "Laten we iets",
+    headingItalic: "samen bouwen.",
+    subtitle: "Of u nu operationele implementatie, strategische architectuur of een gestructureerde transformatiepartner nodig heeft — we zijn klaar om uw aanvraag te beoordelen.",
+    ctaPrimary: "Vertel ons over uzelf",
+    ctaSecondary: "Operationele beoordeling aanvragen",
+    followLinkedIn: "Volg ons op LinkedIn",
+  },
+
+  contact: {
+    heading: "Stuur ons een bericht",
+    subtitle: "Vul het onderstaande formulier in en we nemen zo snel mogelijk contact met u op.",
+    labelName: "Volledige naam",
+    labelEmail: "E-mailadres",
+    labelCompany: "Bedrijfsnaam",
+    labelMessage: "Bericht",
+    required: "*",
+    placeholderName: "Uw volledige naam",
+    placeholderEmail: "uw@email.com",
+    placeholderCompany: "Uw bedrijfsnaam",
+    placeholderMessage: "Vertel ons over uw zakelijke doelen en hoe we kunnen helpen...",
+    buttonSend: "Bericht verzenden",
+    privacyText: "Door dit formulier in te dienen, gaat u akkoord met onze servicevoorwaarden en privacybeleid.",
+    successHeading: "Bericht voorbereid",
+    successText: "Uw e-mailclient zou moeten zijn geopend. Zo niet, stuur ons dan rechtstreeks een e-mail naar info@andykgroup.com",
+  },
+
+  footer: {
+    copyright: "© 2026",
+    linkHome: "Home",
+    linkSystems: "A.D.A.M. & E.V.E.",
+    linkPricing: "Prijzen",
+    linkContact: "Contact",
+    linkPrivacy: "Privacybeleid",
+    linkCookies: "Cookiebeleid",
+    linkTerms: "Gebruiksvoorwaarden",
+    linkDisclaimer: "Website disclaimer",
+    linkLegalNotice: "Juridische kennisgeving",
+    linkClientPortal: "Klantportaal",
+    selectLanguage: "Taal",
+    selectCurrency: "Valuta",
+  },
+
+  common: {
+    getStarted: "Begin",
+    learnMore: "Meer informatie",
+    contactUs: "Neem contact op",
+    readMore: "Lees meer",
+  },
+
+  nav: {
+    about: "Over ons",
+    caseStudies: "Casestudies",
+    pricing: "Tarieven",
+    contact: "Contact",
+    services: "Diensten",
+    groupSystems: "Systemen",
+    groupBusiness: "Zakelijke diensten",
+    groupIT: "IT-diensten",
+    adamDesc: "Geautomatiseerde Document- & Accountmanager",
+    endToEnd: "End-to-End",
+    endToEndDesc: "Strategische bedrijfsontwikkeling en groeiarchitectuur",
+    b2gPublic: "B2G Publieke sector",
+    b2gPublicDesc: "Overheidsopdrachten en aanbestedingen",
+    sysArch: "Systeemarchitectuur",
+    sysArchDesc: "Ontwerp en planning van bedrijfssystemen",
+    platformDev: "Platformontwikkeling",
+    platformDevDesc: "Portalen, dashboards en maatwerkoplossingen",
+    automation: "Automatisering & integraties",
+    automationDesc: "CRM-, ERP- en workflowautomatisering",
+    cto: "CTO-as-a-Service",
+    ctoDesc: "Technisch leiderschap op aanvraag",
+  },
+
+  founders: {
+    eyebrow: "De mensen erachter",
+    heading: "Ontmoet de",
+    headingItalic: "oprichters",
+    connect: "Verbinden",
+    roles: [
+      "Oprichter & Operationeel Architect",
+      "Medeoprichter & CTO",
+    ],
+    bios: [
+      "Meer dan vijftien jaar leiderschap in operationele strategie, bedrijfsontwikkeling en implementatiearchitectuur. Andrej is gespecialiseerd in het elimineren van operationele chaos — het bouwen van gestructureerde implementatiesystemen voor B2G, operationele implementatie en internationale klantengagementen.",
+      "De technische architect achter A.D.A.M., Kobe bouwt de operationele infrastructuur die implementatie-eerste strategie werkelijkheid maakt.",
+    ],
+    quotes: [
+      "Mijn focus is het bouwen van implementatiesystemen die niet alleen goed op papier staan — ze elimineren chaos, creëren operationele helderheid en schalen met structuur.",
+      "",
+    ],
+    locations: [
+      "Geboren in Oostenrijk",
+      "Geboren in België",
+    ],
+  },
+
+  caseStudyPages: {
+    nextCaseStudy: "Volgende casestudie",
+    problem: "Probleem",
+    solution: "Oplossing",
+    outcome: "Resultaat",
+    hospitality: {
+      title: "Horecabeheersysteem",
+      problem: "Een groeiende horecagroep met meerdere vestigingen werkte met losgekoppelde tools, handmatige processen en inconsistente gastervaringen. Omzetbeheer, personeelscoördinatie en gastcommunicatie waren versnipperd over spreadsheets en ad-hocoplossingen.",
+      solution: "We ontworpen en implementeerden een compleet digitaal operationeel systeem — waarbij reserveringsbeheer, personeelsplanning, gastcommunicatie en financieel toezicht werden geïntegreerd in één gestructureerd platform. De strategie omvatte operationeel herontwerp, technologieselectie en teamonboarding.",
+      outcome: "Uniforme operaties over alle vestigingen. De personeelsefficiëntie verbeterde, gasttevredenheidsscores stegen en de groep kreeg duidelijk zicht op prestatie-indicatoren — alles draaiend via één systeem.",
+    },
+    healthcare: {
+      title: "Digitalisering gezondheidszorg",
+      problem: "Een fysiotherapiekliniek worstelde met chaos in klinische werkprocessen — patiëntenplanning, behandelregistraties, facturering en communicatie werden allemaal via aparte, losgekoppelde systemen afgehandeld. Medewerkers besteedden meer tijd aan administratie dan aan patiëntenzorg.",
+      solution: "We ontwierpen een gestructureerd operationeel systeem voor de kliniek, waarbij patiëntenbeheer, afsprakenplanning, behandeldocumentatie en facturering werden geïntegreerd in een samenhangende digitale workflow — met A.D.A.M. Healthcare voor het document- en accountbeheer.",
+      outcome: "Administratietijd aanzienlijk verminderd. Patiëntendoorvoer verbeterd. De kliniek werkt nu met een duidelijke, gestructureerde digitale workflow die klinisch personeel gefocust houdt op zorg, niet op papierwerk.",
+    },
+    consulting: {
+      title: "Professionalisering consultancy",
+      problem: "Een adviesbureau leverde waarde maar inconsistent — voorstellen waren ad-hoc, projectmanagement was reactief en klantcommunicatie hing volledig af van de persoonlijke relaties van de oprichter. Het bedrijf kon niet schalen zonder structurele verandering.",
+      solution: "We transformeerden de adviesorganisatie van een emotiegedreven operatie naar een gestructureerde, professionele dienstverlening. Dit omvatte gestandaardiseerde voorstelsjablonen, projectmanagementworkflows, klantonboardingprocessen en een duidelijk dienstverleningskader.",
+      outcome: "De praktijk levert nu consistente, professionele dienstverlening ongeacht welk teamlid de leiding heeft. Klantbehoud verbeterde, verwijzingspercentages stegen en het bedrijf is gepositioneerd voor schaalbare groei.",
+    },
+  },
+
+  languages: {
+    en: "English",
+    es: "Español",
+    sk: "Slovenčina",
+    nl: "Nederlands",
+    pt: "Português",
+    de: "Deutsch",
+  },
+};
+
+// Portuguese translations
+const pt: typeof en = {
+  company: {
+    name: "Andy'K Group International LTD",
+    tagline: "Arquitetura Empresarial Completa e Implementação Operacional",
+    subtitle: "Arquitetura de Implementação Operacional · Sistemas Operacionais Empresariais",
+    subtitleLine2: "A.D.A.M. estrutura as operações. Os humanos tomam decisões estratégicas.",
+    description: "Andy'K Group International LTD é uma empresa de arquitetura de implementação operacional sediada no Reino Unido — eliminando o caos operacional em onboarding, implementação e gestão do ciclo de vida.",
+    descriptionExtra: "Com clientes em toda a Europa e América Latina, construímos ambientes de implementação estruturados onde estratégia, operações e tecnologia avançam numa só direção.",
+    descriptionSystems: "Serviços de implementação operacional combinando entrega estruturada, arquitetura empresarial e tecnologia — ajudando empresas a alcançar clareza operacional em escala.",
+    quote: "Uma estrutura. Um fluxo. Um sistema.",
+    quoteSubtitle: "Construído para clareza operacional.",
+    location: "Londres, Reino Unido",
+    ukCompany: "Empresa Limitada do Reino Unido",
+  },
+
+  hero: {
+    ctaPrimary: "Conte-nos sobre você",
+    ctaSecondary: "Saiba como trabalhamos",
+    emailPlaceholder: "Seu endereço de e-mail",
+    getInContact: "Entre em contato",
+  },
+
+  banner: {
+    opLead: "Arquitetura Operacional:",
+    opText: "ciclo de vida de implementação estruturada e clareza operacional",
+    adamSystem: "Sistema A.D.A.M.:",
+    adamText: "plataforma de implementação operacional — entrega estruturada e ciclo de vida do cliente",
+    b2gTender: "Estratégia B2G:",
+    b2gText: "inteligência de procurement e expansão do setor público",
+    trusted: "Confiável em:",
+    trustedText: "LATAM, Benelux, DACH e EUA",
+  },
+
+  services: {
+    heading: "Nossos",
+    headingItalic: "serviços",
+    subtitle: "Serviços de implementação operacional — combinando entrega estruturada, arquitetura empresarial e tecnologia.",
+    items: [
+      { title: "End-to-End", description: "Parceria de implementação estratégica — engagement de transformação operacional, seletivo por candidatura" },
+      { title: "B2G", description: "Estratégia do setor público, consultoria de licitações e aquisições" },
+      { title: "IT Services", description: "Arquitetura de sistemas, desenvolvimento de plataformas e automação" },
+    ],
+  },
+
+  endToEnd: {
+    heading: "Parceria de",
+    headingItalic: "Implementação Estratégica",
+    description: "Eliminamos o caos operacional em onboarding, implementação e gestão do ciclo de vida. Um engagement seletivo — rollout estruturado, implementação em primeiro lugar. A.D.A.M. estrutura as operações. Os humanos tomam decisões estratégicas.",
+    bullets: [
+      { title: "Clareza operacional", description: "Eliminando o caos em cada camada empresarial — definindo estrutura, responsabilidade e fluxo de execução." },
+      { title: "Arquitetura de receita", description: "Desenho de sistemas de preços, monetização e fluxo de receita para crescimento sustentável." },
+      { title: "Posicionamento de mercado", description: "Refinamento da marca, proposta de valor e vantagem competitiva no mercado-alvo." },
+      { title: "Redesenho de implementação", description: "Ciclo de vida de implementação estruturado — do onboarding ao rastreamento de entregas e otimização contínua." },
+      { title: "Integração de sistemas", description: "Conexão de ferramentas, plataformas e fluxos de dados num ecossistema operacional unificado." },
+      { title: "Controlo de ciclo de vida estruturado", description: "Construção de frameworks de implementação escaláveis com clareza operacional de longo prazo e execução controlada." },
+    ],
+  },
+
+  endToEndQualification: {
+    title: "Como colaboramos",
+    description: "Parcerias de Implementação Estratégica são revisadas internamente e aprovadas seletivamente — apenas por candidatura. Rollout estruturado. Clareza operacional em cada engagement.",
+    steps: [
+      "Enviar avaliação",
+      "Revisão interna",
+      "Avaliação de adequação estratégica",
+      "Chamada de qualificação",
+      "Proposta",
+    ],
+    ctaAssessment: "Candidatar-se para implementação",
+    ctaReview: "Solicitar avaliação operacional",
+  },
+
+  lovedBy: {
+    headingBold: "Construído sobre",
+    headingItalic: "estrutura.",
+    headingLine2: "Construído para eliminar o caos.",
+    paragraph1: "Andy'K Group International LTD é uma empresa de arquitetura de implementação operacional sediada no Reino Unido — eliminando o caos operacional e entregando transformação estruturada em ambientes B2G, arquitetura empresarial integrada e orientados por tecnologia.",
+    paragraph2: "Eliminamos o caos operacional em onboarding, implementação e gestão do ciclo de vida.",
+    paragraph3: "A.D.A.M. estrutura as operações. E.V.E. gere a execução, marcos e rastreamento de entregas. Os humanos tomam decisões estratégicas.",
+    quote: "Uma estrutura. Um fluxo. Um sistema.",
+    tagline: "CONSTRUÍDO PARA CLAREZA OPERACIONAL.",
+  },
+
+  caseStudies: {
+    heading: "Casos de",
+    headingItalic: "estudo",
+    cards: [
+      { shortTitle: "Sistema operacional hoteleiro", title: "Como resolvemos operações hoteleiras fragmentadas com nossos serviços", description: "Construímos um sistema operacional digital completo para um grupo hoteleiro — da estratégia à execução.", link: "Saiba mais" },
+      { shortTitle: "Digitalização da saúde", title: "Como resolvemos o caos clínico com nossos serviços", description: "Projetamos um sistema operacional estruturado para uma clínica de fisioterapia, integrando A.D.A.M. Healthcare.", link: "Saiba mais" },
+      { shortTitle: "Profissionalização de consultoria", title: "Como resolvemos a inconsistência em consultoria com nossos serviços", description: "Transformamos uma prática de consultoria emocional num serviço profissional estruturado e escalável.", link: "Saiba mais" },
+    ],
+  },
+
+  roadmap: {
+    heading: "Como o A.D.A.M.",
+    headingItalic: "funciona",
+    subtitle: "Do primeiro contacto ao lançamento do projeto em seis passos estruturados.",
+    steps: [
+      {
+        title: "Candidatura Estratégica",
+        description: "Envie a sua candidatura de implementação. Analisamos todos os pedidos manualmente para verificar a adequação estratégica.",
+      },
+      {
+        title: "Revisão Interna e Qualificação",
+        description: "A nossa equipa avalia a adequação operacional, o potencial estratégico e a prontidão para implementação.",
+      },
+      {
+        title: "Proposta e Estratégia",
+        description: "Elaboramos uma proposta de implementação personalizada e um documento de estratégia operacional.",
+      },
+      {
+        title: "Contrato e Assinatura",
+        description: "Reveja e assine digitalmente o seu acordo de implementação.",
+      },
+      {
+        title: "Fatura e Pagamento",
+        description: "Faturação estruturada — 50% antecipado, 50% na conclusão da Fase 1.",
+      },
+      {
+        title: "Arranque e Implementação",
+        description: "A ativação operacional começa. O seu ambiente A.D.A.M. é configurado e o go-live é agendado.",
+      },
+    ],
+    statusBadge: "A.D.A.M. está ativo e processando clientes",
+    stepLabel: "Passo",
+  },
+
+  pricing: {
+    heading: "Planos para",
+    headingItalic: "cada estágio",
+    subtitle: "Assessoria estruturada e desenvolvimento de negócios — combinando estratégia, expertise no setor público e infraestrutura tecnológica para ajudá-lo a escalar.",
+    eyebrow: "Preços transparentes",
+    tabB2G: "Setor Público B2G",
+    tabTech: "Tecnologia / CTO",
+    commitment: "A partir de 3 meses",
+    popular: "Popular",
+    from: "a partir de",
+    perMonth: "/ mês",
+    perHour: "/ hora",
+    getStarted: "Começar",
+    customQuote: "Precisa de algo personalizado? Adaptamos pacotes aos seus requisitos exatos.",
+    requestCustomQuote: "Solicitar orçamento personalizado",
+    billingBasis: "Faturamento mensal",
+    billingMinimum: "Compromisso inicial de 3\u201312 meses",
+    billingRenewal: "Transição para assinatura mensal contínua após entrega",
+    billingCancellation: "Aviso de cancelamento de 15 dias",
+
+    b2gStarter: {
+      name: "GovStarter",
+      features: [
+        "Inteligência de procurement: 5 oportunidades verificadas/mês",
+        "Revisão de elegibilidade e conformidade",
+        "Assessoria em arquitetura de licitações",
+        "Consulta estratégica mensal",
+      ],
+    },
+    b2gExpand: {
+      name: "GovExpand",
+      features: [
+        "Pipeline do setor público ativo: 10 licitações verificadas",
+        "Revisão do fluxo de trabalho de conformidade",
+        "Consulta de estratégia do setor público",
+        "Estruturação do pipeline de expansão governamental",
+      ],
+    },
+    b2gElite: {
+      name: "GovElite",
+      features: [
+        "Arquitetura completa de propostas e redação",
+        "Roteiro de licitações e estratégia de procurement",
+        "Estruturação de consórcio e identificação de parceiros",
+        "Suporte de assessoria estratégica prioritária",
+      ],
+    },
+
+    techArchitecture: {
+      name: "Consultoria de Arquitetura de Sistemas",
+      features: [
+        "Design de arquitetura de sistemas de negócios",
+        "Planejamento de infraestrutura",
+        "Estratégia de arquitetura de automação",
+      ],
+    },
+    techPlatforms: {
+      name: "Desenvolvimento de Plataformas Empresariais",
+      features: [
+        "Portais internos",
+        "Dashboards operacionais",
+        "Sistemas empresariais personalizados",
+      ],
+    },
+    techAutomation: {
+      name: "Automação e Integrações",
+      features: [
+        "Integrações CRM / ERP",
+        "Automação de API",
+        "Sistemas de automação de fluxo de trabalho",
+      ],
+    },
+    techAudit: {
+      name: "Auditoria de Sistemas Técnicos",
+      features: [
+        "Auditoria de infraestrutura",
+        "Avaliação de escalabilidade",
+        "Revisão de linha de base de segurança",
+      ],
+    },
+    techCTO: {
+      name: "CTO-como-Serviço",
+      features: [
+        "Envolvimento técnico",
+        "Supervisão de arquitetura",
+        "Seleção de fornecedores e infraestrutura",
+        "Consultoria de estratégia de escalabilidade",
+        "Contrato mínimo de 1 mês — vagas limitadas",
+      ],
+    },
+  },
+
+  cta: {
+    eyebrow: "Entre em contato",
+    heading: "Vamos construir algo",
+    headingItalic: "juntos.",
+    subtitle: "Se precisa de implementação operacional, arquitetura estratégica ou um parceiro de transformação estruturada — estamos prontos para analisar a sua candidatura.",
+    ctaPrimary: "Conte-nos sobre você",
+    ctaSecondary: "Solicitar avaliação operacional",
+    followLinkedIn: "Siga-nos no LinkedIn",
+  },
+
+  contact: {
+    heading: "Envie-nos uma mensagem",
+    subtitle: "Preencha o formulário abaixo e entraremos em contato o mais breve possível.",
+    labelName: "Nome completo",
+    labelEmail: "Endereço de e-mail",
+    labelCompany: "Nome da empresa",
+    labelMessage: "Mensagem",
+    required: "*",
+    placeholderName: "Seu nome completo",
+    placeholderEmail: "seu@email.com",
+    placeholderCompany: "Nome da sua empresa",
+    placeholderMessage: "Conte-nos sobre seus objetivos de negócios e como podemos ajudar...",
+    buttonSend: "Enviar mensagem",
+    privacyText: "Ao enviar este formulário, você concorda com nossos termos de serviço e política de privacidade.",
+    successHeading: "Mensagem preparada",
+    successText: "Seu cliente de e-mail deve ter aberto. Caso contrário, envie-nos um e-mail diretamente para info@andykgroup.com",
+  },
+
+  footer: {
+    copyright: "© 2026",
+    linkHome: "Início",
+    linkSystems: "A.D.A.M. & E.V.E.",
+    linkPricing: "Preços",
+    linkContact: "Contato",
+    linkPrivacy: "Política de privacidade",
+    linkCookies: "Política de cookies",
+    linkTerms: "Termos de uso",
+    linkDisclaimer: "Aviso legal do site",
+    linkLegalNotice: "Aviso legal",
+    linkClientPortal: "Portal do cliente",
+    selectLanguage: "Idioma",
+    selectCurrency: "Moeda",
+  },
+
+  common: {
+    getStarted: "Começar",
+    learnMore: "Saiba mais",
+    contactUs: "Entre em contato",
+    readMore: "Leia mais",
+  },
+
+  nav: {
+    about: "Sobre",
+    caseStudies: "Estudos de caso",
+    pricing: "Preços",
+    contact: "Contato",
+    services: "Serviços",
+    groupSystems: "Sistemas",
+    groupBusiness: "Serviços empresariais",
+    groupIT: "Serviços de TI",
+    adamDesc: "Gestor Automatizado de Documentos e Contas",
+    endToEnd: "End-to-End",
+    endToEndDesc: "Desenvolvimento empresarial estratégico e arquitetura de crescimento",
+    b2gPublic: "B2G Setor público",
+    b2gPublicDesc: "Licitações governamentais e aquisições",
+    sysArch: "Arquitetura de sistemas",
+    sysArchDesc: "Projeto e planejamento de sistemas empresariais",
+    platformDev: "Desenvolvimento de plataformas",
+    platformDevDesc: "Portais, dashboards e sistemas personalizados",
+    automation: "Automação e integrações",
+    automationDesc: "Automação de CRM, ERP e fluxos de trabalho",
+    cto: "CTO-as-a-Service",
+    ctoDesc: "Liderança técnica sob demanda",
+  },
+
+  founders: {
+    eyebrow: "As pessoas por trás",
+    heading: "Conheça os",
+    headingItalic: "fundadores",
+    connect: "Conectar",
+    roles: [
+      "Fundador e Arquiteto Operacional",
+      "Cofundador e CTO",
+    ],
+    bios: [
+      "Mais de quinze anos de liderança em estratégia operacional, desenvolvimento empresarial e arquitetura de implementação. Andrej é especialista em eliminar o caos operacional — construindo sistemas de implementação estruturados para B2G, implementação operacional e engagements internacionais com clientes.",
+      "O arquiteto técnico por trás do A.D.A.M., Kobe constrói a infraestrutura operacional que torna a estratégia de implementação em primeiro lugar uma realidade.",
+    ],
+    quotes: [
+      "Meu foco é construir sistemas de implementação que não apenas pareçam bons no papel — eles eliminam o caos, criam clareza operacional e escalam com estrutura.",
+      "",
+    ],
+    locations: [
+      "Nascido na Áustria",
+      "Nascido na Bélgica",
+    ],
+  },
+
+  caseStudyPages: {
+    nextCaseStudy: "Próximo estudo de caso",
+    problem: "Problema",
+    solution: "Solução",
+    outcome: "Resultado",
+    hospitality: {
+      title: "Sistema operacional hoteleiro",
+      problem: "Um grupo hoteleiro em crescimento com múltiplas propriedades funcionava com ferramentas desconectadas, processos manuais e experiências inconsistentes para os hóspedes. A gestão de receitas, a coordenação de pessoal e a comunicação com os hóspedes estavam fragmentadas entre planilhas e soluções improvisadas.",
+      solution: "Projetamos e implementamos um sistema operacional digital completo — integrando gestão de reservas, programação de pessoal, comunicação com hóspedes e supervisão financeira em uma plataforma estruturada. A estratégia cobriu redesenho operacional, seleção de tecnologia e integração da equipe.",
+      outcome: "Operações unificadas em todas as propriedades. A eficiência do pessoal melhorou, as pontuações de satisfação dos hóspedes aumentaram e o grupo ganhou visibilidade clara das métricas de desempenho — tudo funcionando através de um único sistema.",
+    },
+    healthcare: {
+      title: "Digitalização da saúde",
+      problem: "Uma clínica de fisioterapia enfrentava dificuldades com o caos nos fluxos de trabalho clínicos — agendamento de pacientes, registros de tratamento, faturamento e comunicação eram tratados por sistemas separados e desconectados. A equipe gastava mais tempo com administração do que com o atendimento ao paciente.",
+      solution: "Projetamos um sistema operacional estruturado para a clínica, integrando gestão de pacientes, agendamento de consultas, documentação de tratamentos e faturamento em um fluxo de trabalho digital coeso — com A.D.A.M. Healthcare gerenciando a camada de gestão de documentos e contas.",
+      outcome: "O tempo administrativo foi significativamente reduzido. A produtividade dos pacientes melhorou. A clínica agora opera com um fluxo de trabalho digital claro e estruturado que mantém a equipe clínica focada no atendimento, não na burocracia.",
+    },
+    consulting: {
+      title: "Profissionalização de consultoria",
+      problem: "Uma prática de consultoria entregava valor, mas de forma inconsistente — as propostas eram improvisadas, a gestão de projetos era reativa e a comunicação com os clientes dependia inteiramente das relações pessoais do fundador. O negócio não podia escalar sem mudança estrutural.",
+      solution: "Transformamos a prática de consultoria de uma operação movida por emoções em um serviço profissional estruturado. Isso incluiu modelos de propostas padronizados, fluxos de trabalho de gestão de projetos, processos de integração de clientes e uma estrutura clara de entrega de serviços.",
+      outcome: "A prática agora entrega um serviço profissional consistente, independentemente de qual membro da equipe está liderando. A retenção de clientes melhorou, as taxas de indicação aumentaram e o negócio está posicionado para crescimento escalável.",
+    },
+  },
+
+  languages: {
+    en: "English",
+    es: "Español",
+    sk: "Slovenčina",
+    nl: "Nederlands",
+    pt: "Português",
+    de: "Deutsch",
+  },
+};
+
+// German translations (formal - Sie)
+const de: typeof en = {
+  company: {
+    name: "Andy'K Group International LTD",
+    tagline: "End-to-End-Unternehmensarchitektur & Operative Implementierung",
+    subtitle: "Operative Implementierungsarchitektur · Business Operating Systems",
+    subtitleLine2: "A.D.A.M. strukturiert den Betrieb. Menschen treffen strategische Entscheidungen.",
+    description: "Andy'K Group International LTD ist ein in Großbritannien ansässiges Unternehmen für operative Implementierungsarchitektur — das operatives Chaos in Onboarding, Implementierung und Lifecycle-Management eliminiert.",
+    descriptionExtra: "Mit Kunden in ganz Europa und Lateinamerika bauen wir strukturierte Implementierungsumgebungen, in denen Strategie, Betrieb und Technologie in eine Richtung bewegen.",
+    descriptionSystems: "Operative Implementierungsdienstleistungen, die strukturierte Lieferung, Unternehmensarchitektur und Technologie kombinieren — Unternehmen helfen, operative Klarheit in der Skalierung zu erreichen.",
+    quote: "Eine Struktur. Ein Ablauf. Ein System.",
+    quoteSubtitle: "Gebaut für operative Klarheit.",
+    location: "London, Großbritannien",
+    ukCompany: "UK Limited Company",
+  },
+
+  hero: {
+    ctaPrimary: "Erzählen Sie uns von sich",
+    ctaSecondary: "Erfahren Sie, wie wir arbeiten",
+    emailPlaceholder: "Ihre E-Mail-Adresse",
+    getInContact: "Kontakt aufnehmen",
+  },
+
+  banner: {
+    opLead: "Operative Architektur:",
+    opText: "strukturierter Implementierungs-Lifecycle & operative Klarheit",
+    adamSystem: "A.D.A.M. System:",
+    adamText: "operative Implementierungsplattform — strukturierte Lieferung & Kundenlebenszyklus",
+    b2gTender: "B2G-Strategie:",
+    b2gText: "Beschaffungsintelligenz & Expansion im öffentlichen Sektor",
+    trusted: "Vertraut in:",
+    trustedText: "LATAM, Benelux, DACH und USA",
+  },
+
+  services: {
+    heading: "Unsere",
+    headingItalic: "Dienstleistungen",
+    subtitle: "Operative Implementierungsdienstleistungen — strukturierte Lieferung, Unternehmensarchitektur und Technologie.",
+    items: [
+      { title: "End-to-End", description: "Strategische Implementierungspartnerschaft — operatives Transformations-Engagement, selektiv auf Bewerbung" },
+      { title: "B2G", description: "Öffentlicher-Sektor-Strategie, Ausschreibungsberatung und Beschaffung" },
+      { title: "IT Services", description: "Systemarchitektur, Plattformentwicklung und Automatisierung" },
+    ],
+  },
+
+  endToEnd: {
+    heading: "Strategische",
+    headingItalic: "Implementierungspartnerschaft",
+    description: "Wir eliminieren operatives Chaos in Onboarding, Implementierung und Lifecycle-Management. Ein selektives Engagement — strukturierter Rollout, Implementierung zuerst. A.D.A.M. strukturiert den Betrieb. Menschen treffen strategische Entscheidungen.",
+    bullets: [
+      { title: "Operative Klarheit", description: "Chaos auf jeder Unternehmensebene eliminieren — Struktur, Verantwortlichkeit und Ausführungsfluss definieren." },
+      { title: "Umsatzarchitektur", description: "Gestaltung von Preis-, Monetarisierungs- und Umsatzflusssystemen für nachhaltiges Wachstum." },
+      { title: "Marktpositionierung", description: "Verfeinerung von Marke, Wertversprechen und Wettbewerbsvorteil in Ihrem Zielmarkt." },
+      { title: "Implementierungs-Redesign", description: "Strukturierter Implementierungs-Lifecycle — von Onboarding bis Lieferungsverfolgung und kontinuierlicher Optimierung." },
+      { title: "Systemintegration", description: "Verbindung von Tools, Plattformen und Datenflüssen zu einem einheitlichen operativen Ökosystem." },
+      { title: "Strukturierte Lifecycle-Kontrolle", description: "Skalierbare Implementierungsrahmen aufbauen mit langfristiger operativer Klarheit und kontrollierter Ausführung." },
+    ],
+  },
+
+  endToEndQualification: {
+    title: "Wie wir zusammenarbeiten",
+    description: "Strategische Implementierungspartnerschaften werden intern geprüft und selektiv genehmigt — nur auf Bewerbung. Strukturierter Rollout. Operative Klarheit bei jedem Engagement.",
+    steps: [
+      "Bewerbung einreichen",
+      "Interne Prüfung",
+      "Strategische Eignungsbewertung",
+      "Qualifikationsgespräch",
+      "Angebot",
+    ],
+    ctaAssessment: "Für Implementierung bewerben",
+    ctaReview: "Operative Bewertung anfordern",
+  },
+
+  lovedBy: {
+    headingBold: "Gebaut auf",
+    headingItalic: "Struktur.",
+    headingLine2: "Gebaut um Chaos zu eliminieren.",
+    paragraph1: "Andy'K Group International LTD ist ein in Großbritannien ansässiges Unternehmen für operative Implementierungsarchitektur — das operatives Chaos eliminiert und strukturierte Transformation in B2G-, End-to-End-Unternehmensarchitektur- und technologiegetriebenen Umgebungen liefert.",
+    paragraph2: "Wir eliminieren operatives Chaos in Onboarding, Implementierung und Lifecycle-Management.",
+    paragraph3: "A.D.A.M. strukturiert den Betrieb. E.V.E. verwaltet Ausführung, Meilensteine und Lieferungsverfolgung. Menschen treffen strategische Entscheidungen.",
+    quote: "Eine Struktur. Ein Ablauf. Ein System.",
+    tagline: "GEBAUT FÜR OPERATIVE KLARHEIT.",
+  },
+
+  caseStudies: {
+    heading: "Fall-",
+    headingItalic: "studien",
+    cards: [
+      { shortTitle: "Hotel-Betriebssystem", title: "Wie wir fragmentierte Hotelbetriebe mit unseren Dienstleistungen lösten", description: "Ein komplettes digitales Betriebssystem für eine Hotelgruppe aufgebaut — von der Strategie bis zur Umsetzung.", link: "Mehr erfahren" },
+      { shortTitle: "Digitalisierung im Gesundheitswesen", title: "Wie wir klinisches Workflow-Chaos mit unseren Dienstleistungen lösten", description: "Ein strukturiertes Betriebssystem für eine Physiotherapie-Klinik entworfen, mit A.D.A.M. Healthcare-Integration.", link: "Mehr erfahren" },
+      { shortTitle: "Professionalisierung der Beratung", title: "Wie wir inkonsistente Beratungsleistung mit unseren Dienstleistungen lösten", description: "Eine emotionale Beratungspraxis in einen strukturierten, skalierbaren professionellen Service transformiert.", link: "Mehr erfahren" },
+    ],
+  },
+
+  roadmap: {
+    heading: "Wie A.D.A.M.",
+    headingItalic: "funktioniert",
+    subtitle: "Vom Erstkontakt bis zum Projektstart in sechs strukturierten Schritten.",
+    steps: [
+      {
+        title: "Strategische Bewerbung",
+        description: "Reichen Sie Ihren Implementierungsantrag ein. Wir prüfen alle Anfragen manuell auf strategische Eignung.",
+      },
+      {
+        title: "Interne Prüfung & Qualifizierung",
+        description: "Unser Team bewertet die operative Eignung, das strategische Potenzial und die Implementierungsbereitschaft.",
+      },
+      {
+        title: "Angebot & Strategie",
+        description: "Wir erstellen ein maßgeschneidertes Implementierungsangebot und ein operatives Strategiedokument.",
+      },
+      {
+        title: "Vertrag & Unterzeichnung",
+        description: "Prüfen und digital unterschreiben Sie Ihre Implementierungsvereinbarung.",
+      },
+      {
+        title: "Rechnung & Zahlung",
+        description: "Strukturierte Rechnungsstellung — 50% im Voraus, 50% nach Abschluss von Phase 1.",
+      },
+      {
+        title: "Kickoff & Implementierung",
+        description: "Die operative Aktivierung beginnt. Ihre A.D.A.M.-Umgebung wird konfiguriert und der Go-live geplant.",
+      },
+    ],
+    statusBadge: "A.D.A.M. ist aktiv und verarbeitet Kunden",
+    stepLabel: "Schritt",
+  },
+
+  pricing: {
+    heading: "Pläne für",
+    headingItalic: "jede Phase",
+    subtitle: "Strukturierte Beratung und Geschäftsentwicklung — Kombination aus Strategie, Public-Sector-Expertise und technologischer Infrastruktur, um Sie beim Skalieren zu unterstützen.",
+    eyebrow: "Transparente Preise",
+    tabB2G: "B2G-Öffentlicher Sektor",
+    tabTech: "Technologie / CTO",
+    commitment: "Ab 3 Monaten",
+    popular: "Beliebt",
+    from: "ab",
+    perMonth: "/ Monat",
+    perHour: "/ Stunde",
+    getStarted: "Loslegen",
+    customQuote: "Benötigen Sie etwas Individuelles? Wir passen Pakete an Ihre genauen Anforderungen an.",
+    requestCustomQuote: "Individuelles Angebot anfordern",
+    billingBasis: "Monatliche Abrechnung",
+    billingMinimum: "Anfangsverpflichtung von 3\u201312 Monaten",
+    billingRenewal: "\u00DCbergang zu laufendem Monatsabonnement nach Lieferung",
+    billingCancellation: "15 Tage K\u00FCndigungsfrist",
+
+    b2gStarter: {
+      name: "GovStarter",
+      features: [
+        "Beschaffungsintelligenz: 5 verifizierte Möglichkeiten/Monat",
+        "Eignungs- & Compliance-Prüfung",
+        "Ausschreibungsarchitektur-Beratung",
+        "Monatliche strategische Konsultation",
+      ],
+    },
+    b2gExpand: {
+      name: "GovExpand",
+      features: [
+        "Aktive Public-Sector-Pipeline: 10 verifizierte Ausschreibungen",
+        "Compliance-Workflow-Review",
+        "Öffentlicher-Sektor-Strategie-Konsultation",
+        "Strukturierung der Government-Expansions-Pipeline",
+      ],
+    },
+    b2gElite: {
+      name: "GovElite",
+      features: [
+        "Vollständige Angebotsarchitektur & Angebotserstellung",
+        "Ausschreibungs-Roadmap & Beschaffungsstrategie",
+        "Konsortiumsstrukturierung & Partneridentifikation",
+        "Prioritäre strategische Beratungsunterstützung",
+      ],
+    },
+
+    techArchitecture: {
+      name: "Systemarchitektur-Beratung",
+      features: [
+        "Geschäftssystemarchitektur-Design",
+        "Infrastrukturplanung",
+        "Automatisierungsarchitektur-Strategie",
+      ],
+    },
+    techPlatforms: {
+      name: "Geschäftsplattform-Entwicklung",
+      features: [
+        "Interne Portale",
+        "Operative Dashboards",
+        "Benutzerdefinierte Unternehmenssysteme",
+      ],
+    },
+    techAutomation: {
+      name: "Automatisierung & Integrationen",
+      features: [
+        "CRM / ERP Integrationen",
+        "API-Automatisierung",
+        "Workflow-Automatisierungssysteme",
+      ],
+    },
+    techAudit: {
+      name: "Technische Systemprüfung",
+      features: [
+        "Infrastrukturaudit",
+        "Skalierbarkeitsbewertung",
+        "Sicherheits-Baseline-Überprüfung",
+      ],
+    },
+    techCTO: {
+      name: "CTO-als-Dienstleistung",
+      features: [
+        "Technische Beteiligung",
+        "Architekturüberwachung",
+        "Anbieter- und Infrastrukturauswahl",
+        "Skalierungsstrategieberatung",
+        "Mindestens 1-Monats-Vertrag — begrenzte Plätze",
+      ],
+    },
+  },
+
+  cta: {
+    eyebrow: "Kontaktieren Sie uns",
+    heading: "Lassen Sie uns etwas",
+    headingItalic: "gemeinsam aufbauen.",
+    subtitle: "Ob Sie operative Implementierung, strategische Architektur oder einen strukturierten Transformationspartner benötigen — wir sind bereit, Ihre Bewerbung zu prüfen.",
+    ctaPrimary: "Erzählen Sie uns von sich",
+    ctaSecondary: "Operative Bewertung anfordern",
+    followLinkedIn: "Folgen Sie uns auf LinkedIn",
+  },
+
+  contact: {
+    heading: "Senden Sie uns eine Nachricht",
+    subtitle: "Füllen Sie das Formular unten aus und wir melden uns so schnell wie möglich bei Ihnen.",
+    labelName: "Vollständiger Name",
+    labelEmail: "E-Mail-Adresse",
+    labelCompany: "Firmenname",
+    labelMessage: "Nachricht",
+    required: "*",
+    placeholderName: "Ihr vollständiger Name",
+    placeholderEmail: "ihre@email.com",
+    placeholderCompany: "Ihr Firmenname",
+    placeholderMessage: "Erzählen Sie uns von Ihren Geschäftszielen und wie wir helfen können...",
+    buttonSend: "Nachricht senden",
+    privacyText: "Durch das Absenden dieses Formulars stimmen Sie unseren Nutzungsbedingungen und Datenschutzrichtlinien zu.",
+    successHeading: "Nachricht vorbereitet",
+    successText: "Ihr E-Mail-Client sollte sich geöffnet haben. Falls nicht, senden Sie uns direkt eine E-Mail an info@andykgroup.com",
+  },
+
+  footer: {
+    copyright: "© 2026",
+    linkHome: "Startseite",
+    linkSystems: "A.D.A.M. & E.V.E.",
+    linkPricing: "Preise",
+    linkContact: "Kontakt",
+    linkPrivacy: "Datenschutzerklärung",
+    linkCookies: "Cookie-Richtlinie",
+    linkTerms: "Nutzungsbedingungen",
+    linkDisclaimer: "Website-Haftungsausschluss",
+    linkLegalNotice: "Impressum",
+    linkClientPortal: "Kundenportal",
+    selectLanguage: "Sprache",
+    selectCurrency: "Währung",
+  },
+
+  common: {
+    getStarted: "Loslegen",
+    learnMore: "Mehr erfahren",
+    contactUs: "Kontaktieren Sie uns",
+    readMore: "Mehr lesen",
+  },
+
+  nav: {
+    about: "Über uns",
+    caseStudies: "Fallstudien",
+    pricing: "Preise",
+    contact: "Kontakt",
+    services: "Dienstleistungen",
+    groupSystems: "Systeme",
+    groupBusiness: "Geschäftsdienstleistungen",
+    groupIT: "IT-Dienstleistungen",
+    adamDesc: "Automatisierter Dokument- & Kontomanager",
+    endToEnd: "End-to-End",
+    endToEndDesc: "Strategische Geschäftsentwicklung und Wachstumsarchitektur",
+    b2gPublic: "B2G Öffentlicher Sektor",
+    b2gPublicDesc: "Ausschreibungen und öffentliches Beschaffungswesen",
+    sysArch: "Systemarchitektur",
+    sysArchDesc: "Geschäftssystemdesign und -planung",
+    platformDev: "Plattformentwicklung",
+    platformDevDesc: "Portale, Dashboards und maßgeschneiderte Systeme",
+    automation: "Automatisierung & Integrationen",
+    automationDesc: "CRM-, ERP- und Workflow-Automatisierung",
+    cto: "CTO-as-a-Service",
+    ctoDesc: "Technische Führung auf Abruf",
+  },
+
+  founders: {
+    eyebrow: "Die Menschen dahinter",
+    heading: "Lernen Sie die",
+    headingItalic: "Gründer kennen",
+    connect: "Verbinden",
+    roles: [
+      "Gründer & Operativer Architekt",
+      "Mitgründer & CTO",
+    ],
+    bios: [
+      "Über fünfzehn Jahre Führungserfahrung in operativer Strategie, Geschäftsentwicklung und Implementierungsarchitektur. Andrej spezialisiert sich darauf, operatives Chaos zu eliminieren — strukturierte Implementierungssysteme für B2G, operative Implementierung und internationale Kundenengagements zu entwickeln.",
+      "Der technische Architekt hinter A.D.A.M., Kobe baut die operative Infrastruktur, die Implementierung-zuerst-Strategie Wirklichkeit werden lässt.",
+    ],
+    quotes: [
+      "Mein Fokus liegt darauf, Implementierungssysteme zu bauen, die nicht nur auf dem Papier gut aussehen — sie eliminieren Chaos, schaffen operative Klarheit und skalieren mit Struktur.",
+      "",
+    ],
+    locations: [
+      "Geboren in Österreich",
+      "Geboren in Belgien",
+    ],
+  },
+
+  caseStudyPages: {
+    nextCaseStudy: "Nächste Fallstudie",
+    problem: "Problem",
+    solution: "Lösung",
+    outcome: "Ergebnis",
+    hospitality: {
+      title: "Hotel-Betriebssystem",
+      problem: "Eine wachsende Hotelgruppe mit mehreren Häusern arbeitete mit unverbundenen Tools, manuellen Prozessen und inkonsistenten Gästeerlebnissen. Umsatzmanagement, Personalkoordination und Gästekommunikation waren über Tabellen und Ad-hoc-Lösungen verstreut.",
+      solution: "Wir haben ein vollständiges digitales Betriebssystem entworfen und implementiert — mit Integration von Reservierungsmanagement, Personalplanung, Gästekommunikation und Finanzaufsicht in einer strukturierten Plattform. Die Strategie umfasste operative Neugestaltung, Technologieauswahl und Teameinarbeitung.",
+      outcome: "Einheitliche Abläufe über alle Standorte hinweg. Die Personaleffizienz verbesserte sich, die Gästezufriedenheitswerte stiegen und die Gruppe gewann klare Einsicht in Leistungskennzahlen — alles über ein System.",
+    },
+    healthcare: {
+      title: "Digitalisierung Gesundheitswesen",
+      problem: "Eine Physiotherapiepraxis kämpfte mit Chaos in klinischen Arbeitsabläufen — Patientenplanung, Behandlungsdokumentation, Abrechnung und Kommunikation liefen über separate, unverbundene Systeme. Das Personal verbrachte mehr Zeit mit Verwaltung als mit Patientenversorgung.",
+      solution: "Wir entwarfen ein strukturiertes Betriebssystem für die Klinik, das Patientenmanagement, Terminplanung, Behandlungsdokumentation und Abrechnung in einem zusammenhängenden digitalen Workflow integriert — mit A.D.A.M. Healthcare für die Dokument- und Kontoverwaltung.",
+      outcome: "Die Verwaltungszeit wurde erheblich reduziert. Der Patientendurchsatz verbesserte sich. Die Klinik arbeitet nun mit einem klaren, strukturierten digitalen Workflow, der das klinische Personal auf die Versorgung fokussiert, nicht auf Papierkram.",
+    },
+    consulting: {
+      title: "Professionalisierung Beratung",
+      problem: "Eine Beratungspraxis lieferte Mehrwert, aber inkonsistent — Angebote waren improvisiert, Projektmanagement war reaktiv und die Kundenkommunikation hing ausschließlich von den persönlichen Beziehungen des Gründers ab. Das Unternehmen konnte ohne strukturelle Änderung nicht skalieren.",
+      solution: "Wir transformierten die Beratungspraxis von einem emotional gesteuerten Betrieb in einen strukturierten, professionellen Service. Dies umfasste standardisierte Angebotsvorlagen, Projektmanagement-Workflows, Kundenonboarding-Prozesse und ein klares Leistungserbringungsrahmenwerk.",
+      outcome: "Die Praxis liefert nun konsistente, professionelle Dienstleistungen unabhängig davon, welches Teammitglied die Leitung hat. Die Kundenbindung verbesserte sich, Empfehlungsraten stiegen und das Unternehmen ist für skalierbares Wachstum positioniert.",
+    },
+  },
+
+  languages: {
+    en: "English",
+    es: "Español",
+    sk: "Slovenčina",
+    nl: "Nederlands",
+    pt: "Português",
+    de: "Deutsch",
+  },
+};
+
+// Export translations object
+export const translations: Record<Locale, typeof en> = {
+  en,
+  es,
+  sk,
+  nl,
+  pt,
+  de,
+};
+
+// Export type for translation keys
+export type TranslationKeys = typeof en;
