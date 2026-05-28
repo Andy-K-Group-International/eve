@@ -1,11 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 export default function Hero() {
   const router = useRouter();
   const [email, setEmail] = useState("");
+
+  useEffect(() => {
+    const saved = localStorage.getItem("eve_email");
+    if (saved) setEmail(saved);
+  }, []);
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -15,24 +20,15 @@ export default function Hero() {
   }
 
   return (
-    <section id="hero" className="relative text-center py-20 px-8 max-w-[900px] mx-auto">
-      {/* Cartesian grid overlay — same pattern as ADAM hero */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden" style={{ opacity: 0.55 }}>
-        <div className="cartesian-grid" />
-        <div className="cartesian-grid-glow" />
-      </div>
-      <img
-        src="/images/eve-logo.png"
-        alt="E.V.E."
-        style={{ height: "120px", width: "auto", margin: "0 auto 16px", display: "block" }}
-      />
+    <section id="hero" className="text-center py-20 px-8 max-w-[900px] mx-auto">
+      <img src="/images/eve-logo.png" alt="E.V.E." style={{ height: "120px", width: "auto", margin: "0 auto 16px", display: "block" }} />
       <h1 className="gradient-text font-bold tracking-tight leading-[1.2] text-[clamp(2.375rem,1.6rem+2.75vw,3.75rem)] mb-6">
         <span className="block">E.V.E.</span>
         <span className="block font-serif font-light italic text-[1.3em]">
           Intelligence System
         </span>
       </h1>
-      <p className="text-xl leading-relaxed text-muted font-light max-w-[620px] mx-auto mb-3">
+      <p className="text-xl leading-relaxed text-muted font-light max-w-[620px] mx-auto mb-2">
         E.V.E. processes operational data, supports strategic decisions, and delivers implementation intelligence across the Andy&rsquo;K Group ecosystem.
       </p>
       <p className="text-base leading-relaxed text-muted-2 font-light max-w-[540px] mx-auto mb-9">
@@ -45,11 +41,9 @@ export default function Hero() {
         >
           Andy&rsquo;K Group International LTD
         </a>
-        <br />
-        <span className="font-bold">Ready to access E.V.E.?</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="inline w-4 h-4 ml-1 -mt-0.5 text-muted-2">
-          <path d="M19 14l-7 7m0 0l-7-7m7 7V3" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
+        <br/>
+        <span className="font-bold"> Ready to access E.V.E.?</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="inline w-4 h-4 ml-1 -mt-0.5 text-muted-2"><path d="M19 14l-7 7m0 0l-7-7m7 7V3" strokeLinecap="round" strokeLinejoin="round" /></svg>
       </p>
 
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-[560px] mx-auto">

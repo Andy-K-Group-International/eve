@@ -1,5 +1,7 @@
 "use client";
 
+import { LanguageProvider } from "@/context/LanguageContext";
+import { CurrencyProvider } from "@/context/CurrencyContext";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import { HeroBackground } from "./BackgroundGrid";
@@ -14,24 +16,28 @@ import AmbientMusic from "./AmbientMusic";
 
 export default function LandingShell() {
   return (
-    <main className="[overflow-x:clip] section-bg-grid">
-      <Navbar />
-      <div className="relative overflow-clip">
-        <HeroBackground />
-        <Hero />
-      </div>
-      <TronDivider />
-      <RoadmapSection />
-      <TronDivider />
-      <IndustrySection />
-      <TronDivider />
-      <PricingSection />
-      <TronDivider />
-      <AccessPortal />
-      <TronDivider />
-      <FaqSection />
-      <Footer />
-      <AmbientMusic src="/audio/eve-theme.wav" credit="DJ Andy'K" creditUrl="https://www.djandykofficial.com" />
-    </main>
+    <LanguageProvider>
+      <CurrencyProvider>
+        <main className="[overflow-x:clip]">
+          <Navbar />
+          <div className="relative overflow-clip">
+            <HeroBackground />
+            <Hero />
+          </div>
+          <TronDivider />
+          <RoadmapSection />
+          <TronDivider />
+          <IndustrySection />
+          <TronDivider />
+          <PricingSection />
+          <TronDivider />
+          <AccessPortal />
+          <TronDivider />
+          <FaqSection />
+          <Footer />
+          <AmbientMusic src="/audio/eve-theme.wav" credit="DJ Andy'K" creditUrl="https://www.djandykofficial.com" />
+        </main>
+      </CurrencyProvider>
+    </LanguageProvider>
   );
 }

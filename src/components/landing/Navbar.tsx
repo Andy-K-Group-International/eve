@@ -2,9 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+
 import { useCurrency } from "@/context/CurrencyContext";
+import { useLanguage } from "@/context/LanguageContext";
 import { CURRENCIES } from "@/lib/currency";
 import type { CurrencyCode } from "@/lib/currency";
+import type { Locale } from "@/lib/translations";
 
 function HamburgerIcon() {
   return (
@@ -26,13 +29,14 @@ function EveLogo() {
   return (
     <div className="flex items-center gap-2">
       <img src="/images/eve-logo.png" alt="E.V.E." style={{ height: "44px", width: "auto" }} />
-      <span className="text-sm font-bold tracking-tight" style={{ color: "#1B1F3A" }}>E.V.E.</span>
+      <span className="text-sm font-bold tracking-tight text-foreground">E.V.E.</span>
     </div>
   );
 }
 
 export default function Navbar() {
   const { currency, setCurrency } = useCurrency();
+  const { locale, setLocale, t } = useLanguage();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
@@ -63,14 +67,15 @@ export default function Navbar() {
 
           {/* Desktop nav — centered */}
           <div className="hidden md:flex items-center gap-7 text-sm text-muted absolute left-1/2 -translate-x-1/2">
-            <a href="#process" className="hover:text-foreground transition-colors">Features</a>
-            <a href="#pricing" className="hover:text-foreground transition-colors">Pricing</a>
+            <a href="#process" className="hover:text-foreground transition-colors">{t.nav.features}</a>
+            <a href="#pricing" className="hover:text-foreground transition-colors">{t.nav.pricing}</a>
             <a href="#access" className="hover:text-foreground transition-colors">Access</a>
-            <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
+            <a href="#contact" className="hover:text-foreground transition-colors">{t.nav.contact}</a>
           </div>
 
-          {/* Desktop right: currency + CTA */}
+          {/* Desktop right: currency + Admin + CTA */}
           <div className="hidden md:flex items-center gap-2">
+            {/* Currency select */}
             <select
               value={currency}
               onChange={(e) => setCurrency(e.target.value as CurrencyCode)}
@@ -81,6 +86,14 @@ export default function Navbar() {
                 <option key={c.code} value={c.code}>{c.code}</option>
               ))}
             </select>
+
+            <Link
+              href="https://adam.andykgroup.com/sign-in?role=admin"
+              className="text-xs text-muted-2 hover:text-foreground transition-colors px-2"
+            >
+              Admin
+            </Link>
+
             <Link
               href="/request-access"
               className="relative inline-flex items-center justify-center h-9 px-5 text-sm font-medium text-foreground btn-primary-gradient"
@@ -100,36 +113,75 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile menu */}
+      {/* Mobile menu — rendered outside <nav> to avoid z-index stacking context issues */}
       {mobileOpen && (
         <div
           className="md:hidden fixed inset-x-0 bottom-0 z-[200] overflow-y-auto"
           style={{ top: "60px", backgroundColor: "#EAE0F0" }}
         >
           <div className="px-6 py-6 space-y-1">
-            {[
-              { label: "Features", href: "#process" },
-              { label: "Pricing", href: "#pricing" },
-              { label: "Access", href: "#access" },
-              { label: "Contact", href: "#contact" },
-            ].map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={closeMobile}
-                className="block py-3 text-base font-medium border-b border-grid-300"
-                style={{ color: "#1B1F3A" }}
-              >
-                {link.label}
-              </a>
-            ))}
+            <a
+              href="#process"
+              onClick={closeMobile}
+              className="block py-3 text-base font-medium border-b border-grid-300"
+              style={{ color: "#1B1F3A" }}
+            >
+              {t.nav.features}
+            </a>
+            <a
+              href="#pricing"
+              onClick={closeMobile}
+              className="block py-3 text-base font-medium border-b border-grid-300"
+              style={{ color: "#1B1F3A" }}
+            >
+              {t.nav.pricing}
+            </a>
+            <a
+              href="#access"
+              onClick={closeMobile}
+              className="block py-3 text-base font-medium border-b border-grid-300"
+              style={{ color: "#1B1F3A" }}
+            >
+              Access
+            </a>
+            <a
+              href="#contact"
+              onClick={closeMobile}
+              className="block py-3 text-base font-medium border-b border-grid-300"
+              style={{ color: "#1B1F3A" }}
+            >
+              {t.nav.contact}
+            </a>
+            <Link
+              href="https://adam.andykgroup.com/sign-in?role=admin"
+              onClick={closeMobile}
+              className="block py-3 text-sm border-b border-grid-300"
+              style={{ color: "#8b93a8" }}
+            >
+              Admin Access
+            </Link>
 
-            <div className="pt-4 pb-2">
+            {/* Mobile language + currency */}
+            <div className="pt-4 pb-2 flex items-center gap-3">
+              <select
+                value={locale}
+                onChange={(e) => setLocale(e.target.value as Locale)}
+                aria-label="Select language"
+                className="text-sm border border-grid-500 rounded px-2 py-2 cursor-pointer focus:outline-none flex-1"
+                style={{ color: "#525a70", backgroundColor: "#EAE0F0" }}
+              >
+                <option value="en">EN — English</option>
+                <option value="sk">SK — Slovenčina</option>
+                <option value="de">DE — Deutsch</option>
+                <option value="es">ES — Español</option>
+                <option value="nl">NL — Nederlands</option>
+                <option value="pt">PT — Português</option>
+              </select>
               <select
                 value={currency}
                 onChange={(e) => setCurrency(e.target.value as CurrencyCode)}
                 aria-label="Select currency"
-                className="text-sm border border-grid-500 rounded px-2 py-2 cursor-pointer focus:outline-none w-full"
+                className="text-sm border border-grid-500 rounded px-2 py-2 cursor-pointer focus:outline-none flex-1"
                 style={{ color: "#525a70", backgroundColor: "#EAE0F0" }}
               >
                 {CURRENCIES.map((c) => (
@@ -138,6 +190,7 @@ export default function Navbar() {
               </select>
             </div>
 
+            {/* Mobile CTA */}
             <div className="pt-2">
               <Link
                 href="/request-access"
