@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
+  title: "Privacy Policy — E.V.E. Intelligence System",
   description:
-    "Learn how Andy'K Group International LTD collects, uses, and safeguards your personal data.",
+    "Learn how Andy'K Group International LTD collects, uses, and safeguards your personal data in connection with the E.V.E. Intelligence System.",
   alternates: { canonical: "/privacy-policy" },
 };
 

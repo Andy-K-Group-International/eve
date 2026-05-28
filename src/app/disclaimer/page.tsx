@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Website Disclaimer",
+  title: "Website Disclaimer — E.V.E. Intelligence System",
   description:
-    "Website disclaimer for Andy'K Group International LTD.",
+    "Website disclaimer for the E.V.E. Intelligence System, operated by Andy'K Group International LTD.",
   alternates: { canonical: "/disclaimer" },
 };
 

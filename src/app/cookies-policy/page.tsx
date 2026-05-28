@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cookies Policy",
+  title: "Cookies Policy — E.V.E. Intelligence System",
   description:
-    "Learn how Andy'K Group International LTD uses cookies and similar technologies on our website.",
+    "Learn how Andy'K Group International LTD uses cookies and similar technologies on the E.V.E. Intelligence System website.",
   alternates: { canonical: "/cookies-policy" },
 };
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions",
+  title: "Terms & Conditions — E.V.E. Intelligence System",
   description:
-    "Website Terms & Conditions governing your access to and use of the Andy'K Group International LTD website.",
+    "Website Terms & Conditions governing your access to and use of the E.V.E. Intelligence System website, operated by Andy'K Group International LTD.",
   alternates: { canonical: "/terms-and-conditions" },
 };
 
