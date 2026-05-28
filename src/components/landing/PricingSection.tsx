@@ -9,7 +9,8 @@ export default function PricingSection() {
         <div className="text-center max-w-[700px] mx-auto mb-10">
           <span className="label-mono block mb-3">Pricing</span>
           <h2 className="text-[clamp(1.875rem,1.52rem+1.25vw,2.5rem)] font-bold tracking-tight leading-[1.2] text-foreground mb-4">
-            E.V.E. Pricing
+            E.V.E.{" "}
+            <span className="font-serif font-light italic text-[1.2em]">Pricing</span>
           </h2>
         </div>
 
